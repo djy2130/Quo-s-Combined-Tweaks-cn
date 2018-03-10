@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mod id="b591acd1-275b-402e-9da1-4c157a1718a6" version="6.0.4">
+	<Properties>
+		<Name>QUO_LOC_MOD_NAME</Name>
+		<Teaser>QUO_LOC_MOD_TEASER</Teaser>		
+		<Description>现在更新为上升和下降。这个mod结合了一些小的调整和游戏调整。使用高级设置屏幕在标准规则或文明爱好者之间选择。一个MyOptions.sql文件中禁用或启用其他功能的mod文件夹。完整的mod细节，访问 https://forums.civfanatics.com/resources/quos-combined-tweaks.25703/</Description>
+		<Authors>Quo，（翻译:kuku小夭）</Authors>
+	</Properties>
+  	<LocalizedText>
+        	<Text id="QUO_LOC_MOD_NAME">
+            		<en_US>Quo's Combined Tweaks: Rise and Fall ALPHA (CivFanatics Edition) v6.0.4</en_US>
+					<zh_Hans_CN>Quo's Combined Tweaks v6.0.4</zh_Hans_CN>
+        	</Text>
+        	<Text id="QUO_LOC_MOD_TEASER">
+            		<en_US>Combines Quos mods into a recommended collection. Use the Advanced Setup screen to select between Standard Rules or Civilization Buffs Only.</en_US>
+					<zh_Hans_CN>Combines Quos mods 推荐收藏. 使用高级设置屏幕在标准规则或文明爱好者之间选择.</zh_Hans_CN>
+        	</Text>        
+    	</LocalizedText>  
+
+    <!-- Files included -->
+	<Files>
+		<File>Scripts/Quo_GameLaunch.lua</File>
+		<File>Config/Quo_Config.sql</File>
+		<File>Config/Quo_Config.xml</File>
+		<File>Tutorial/TutorialScenarioBase.lua</File>
+
+		<File>Gameplay/Quo_AA_Setup_Code.sql</File>
+		<File>Gameplay/Quo_AA_GlobalObjects_Code.sql</File>
+
+		<File>XAV_IP/XAV_AA_Setup_Code.sql</File>
+
+		<File>MyOptions.sql</File>
+	
+		<File>Gameplay/Quo_Rules_Code.sql</File>
+		<File>Gameplay/Quo_Resources_Code.sql</File>
+		<File>Gameplay/Quo_Civ_Code.sql</File>
+		<File>Gameplay/Quo_Tantrum_Code.sql</File>
+		<File>Gameplay/Quo_Friends_Code.sql</File>
+		<File>Gameplay/Quo_Barb_Code.sql</File>
+		<File>Gameplay/Quo_Ocean_Code.sql</File>
+		<File>Gameplay/Quo_Oasis_Code.sql</File>
+		<File>Gameplay/Quo_Options_Code.sql</File>
+		<File>Gameplay/Quo_Siege_Code.sql</File>
+		<File>Gameplay/Quo_Patron_Code.sql</File>
+		<File>Gameplay/Quo_Governments_Code.sql</File>
+		<File>Gameplay/Quo_PopYield_Code.sql</File>
+		<File>Gameplay/Quo_Policies_Code.sql</File>
+		<File>Gameplay/Quo_Wonder_Code.sql</File>
+		<File>Gameplay/Quo_New_Buildings_Code.sql</File>
+		<File>Gameplay/Quo_Beliefs_Code.sql</File>
+		<File>Gameplay/Quo_Secrets_Code.sql</File> 
+		<File>Gameplay/Quo_Units_Code.sql</File>
+		<File>Gameplay/Quo_GreatPeople_Code.sql</File>
+		<File>Gameplay/Quo_REX_Code.sql</File>
+		
+		<File>Gameplay/Quo_AI_Civ_Code.sql</File>
+
+
+		<File>MyScratchpad.sql</File>
+		
+		
+		<!-- English Text -->
+		<File>Text/Quo_Main_Text.sql</File>
+		<File>Text/Quo_Main_Text_New.xml</File>
+		<File>Text/Quo_Policy_Text.sql</File>
+		<File>Text/Quo_Civ_Text.sql</File>
+		<File>Text/Quo_Civ_Text_New.xml</File>
+		<File>Text/Quo_Civ_Text_Tutorial.xml</File>
+		<File>Text/Quo_RandomAgendas_Text.sql</File>
+		
+		<!-- Russian Text -->
+		<!--<File>Text/ru_RU/Quo_Civ_Text_ru_RU.sql</File>-->
+		<!-- Chinese Text -->
+		<File>Text/zh_Hans_CN/Quo_Main_Text_zh_Hans_CN.sql</File>
+		<File>Text/zh_Hans_CN/Quo_Main_Text_New_zh_Hans_CN.xml</File>
+		<File>Text/zh_Hans_CN/Quo_Policy_Text_zh_Hans_CN.sql</File>
+		<File>Text/zh_Hans_CN/Quo_Civ_Text_zh_Hans_CN.sql</File>
+		<File>Text/zh_Hans_CN/Quo_Civ_Text_New_zh_Hans_CN.xml</File>
+		<File>Text/zh_Hans_CN/Quo_Civ_Text_Tutorial_zh_Hans_CN.xml</File>
+		
+		
+		<File>QuoDependencies.dep</File>
+		<File>Icons/Quo_Icons.xml</File>
+		
+		
+		<!-- XAV Improvements Patch Files -->
+		
+		<File>XAV_IP/XAV_DistrictBuilders_Code.sql</File>
+		<File>XAV_IP/XAV_SlowerTechRules_Code.sql</File>
+		<File>XAV_IP/XAV_Boosts_Code.sql</File>
+
+
+		<!-- cleanup -->
+		<File>Gameplay/Quo_ZY_Closeout_Code.sql</File>
+		<File>Gameplay/Quo_ZZ_Debug_Code.sql</File>
+		
+		
+	</Files>
+    <!-- Config prior to game starting -->
+	<Settings>
+		<!--Updates to Configuration database (DebugConfiguration.sqlite)-->
+		<Custom id="QUO_CONFIG">
+			<Items>
+				<File>Config/Quo_Config.sql</File>
+				<File>Config/Quo_Config.xml</File>
+			</Items>
+    		</Custom>
+    		<LocalizedText id="QUO_CONFIG_TEXT">
+      			<Items>
+				<File Priority="10">Gameplay/Quo_AA_Setup_Code.sql</File>
+				<File Priority="8">MyOptions.sql</File>		
+				
+				<!--
+				<File>Text/Quo_Main_Text.sql</File>
+				<File>Text/Quo_Policy_Text.sql</File>
+				<File>Text/Quo_Civ_Text.sql</File>
+				<File>Text/Quo_Civ_Text_New.xml</File>
+				<File>Text/Quo_Main_Text_New.xml</File>
+				-->
+				
+				<!--<File>Text/ru_RU/Quo_Civ_Text_ru_RU.sql</File>-->
+				<!-- Chinese Text -->
+				<File>Text/zh_Hans_CN/Quo_Main_Text_zh_Hans_CN.sql</File>
+				<File>Text/zh_Hans_CN/Quo_Policy_Text_zh_Hans_CN.sql</File>
+				<File>Text/zh_Hans_CN/Quo_Civ_Text_zh_Hans_CN.sql</File>
+				<File>Text/zh_Hans_CN/Quo_Civ_Text_New_zh_Hans_CN.xml</File>
+				<File>Text/zh_Hans_CN/Quo_Main_Text_New_zh_Hans_CN.xml</File>
+				
+      			</Items>
+    		</LocalizedText>
+	</Settings>
+
+    <!-- Main game -->
+	<Components>
+		<!--Art stuff -->
+		<ModArt id="Quo_Mod_Art">
+			<Items>
+				<File>QuoDependencies.dep</File>
+			</Items>
+		</ModArt>
+		<Icons>
+			<Items>
+				<File>Icons/Quo_Icons.xml</File>
+				<File>XAV_IP/Icons.xml</File>
+			</Items>
+		</Icons>
+		
+		<!--Files for a basic game -->
+		<UpdateDatabase id="QUO_BASIC">
+           		<Properties>
+               			<RuleSet>RULESET_EXPANSION_1</RuleSet>
+				<LoadOrder>10100</LoadOrder>
+           		</Properties>
+			<Items>
+				<!-- Quo Tweaks Setup -->
+				<File Priority="400">Gameplay/Quo_AA_Setup_Code.sql</File>
+				<File Priority="300">Gameplay/Quo_AA_GlobalObjects_Code.sql</File>
+				
+				<!-- XAV Improvements Patch Setup -->
+				<File Priority="250">XAV_IP/XAV_AA_Setup_Code.sql</File>
+
+				<File Priority="200">MyOptions.sql</File>				
+
+ 				<File Priority="150">Gameplay/Quo_Rules_Code.sql</File>
+				<File Priority="145">Gameplay/Quo_Civ_Code.sql</File>
+				<File Priority="140">Gameplay/Quo_Resources_Code.sql</File>
+				<File Priority="135">Gameplay/Quo_Options_Code.sql</File>
+
+				<File Priority="99">Gameplay/Quo_Tantrum_Code.sql</File>
+				<File Priority="98">Gameplay/Quo_Friends_Code.sql</File>
+				<File Priority="97">Gameplay/Quo_Barb_Code.sql</File>
+				<File Priority="96">Gameplay/Quo_Ocean_Code.sql</File>
+				<File Priority="95">Gameplay/Quo_Oasis_Code.sql</File>
+				<File Priority="94">Gameplay/Quo_Siege_Code.sql</File>
+				<File Priority="93">Gameplay/Quo_Policies_Code.sql</File>
+				<File Priority="92">Gameplay/Quo_Governments_Code.sql</File>
+				<File Priority="91">Gameplay/Quo_Wonder_Code.sql</File>
+				<File Priority="90">Gameplay/Quo_New_Buildings_Code.sql</File>
+				<File Priority="89">Gameplay/Quo_Beliefs_Code.sql</File>
+				<File Priority="88">Gameplay/Quo_Secrets_Code.sql</File>
+				<File Priority="87">Gameplay/Quo_Units_Code.sql</File>
+				<File Priority="86">Gameplay/Quo_Patron_Code.sql</File>
+				<File Priority="85">Gameplay/Quo_PopYield_Code.sql</File>
+				<File Priority="84">Gameplay/Quo_GreatPeople_Code.sql</File>
+				<File Priority="83">Gameplay/Quo_REX_Code.sql</File>
+
+				<File Priority="50">Gameplay/Quo_AI_Civ_Code.sql</File>
+
+				<!-- XAV Improvements Patch Files -->
+				
+				<File Priority="25">XAV_IP/XAV_DistrictBuilders_Code.sql</File>
+				<File Priority="25">XAV_IP/XAV_SlowerTechRules_Code.sql</File>
+				<File Priority="25">XAV_IP/XAV_Boosts_Code.sql</File>
+
+				<!-- Scratchpad -->
+				<File Priority="15">MyScratchpad.sql</File>
+
+				
+				<File Priority="10">Gameplay/Quo_ZY_Closeout_Code.sql</File>
+				<File Priority="5">Gameplay/Quo_ZZ_Debug_Code.sql</File>
+
+			</Items>
+		</UpdateDatabase>
+
+
+  	  	<!--Localized Text-->
+    		<LocalizedText id="QUO_TEXT_BASIC">
+           		<Properties>
+               			<RuleSet>RULESET_EXPANSION_1</RuleSet>
+				<LoadOrder>10100</LoadOrder>
+           		</Properties>
+      			<Items>
+				<File Priority="1">Gameplay/Quo_AA_Setup_Code.sql</File>
+				<File Priority="1">MyOptions.sql</File>			
+				<!--
+				<File>Text/Quo_Main_Text.sql</File>
+				<File>Text/Quo_Main_Text_New.xml</File>
+				<File>Text/Quo_Policy_Text.sql</File>
+				<File>Text/Quo_Civ_Text.sql</File>
+				<File>Text/Quo_Civ_Text_New.xml</File>
+				<File>Text/Quo_Civ_Text_Tutorial.xml</File>
+				<File>Text/Quo_RandomAgendas_Text.sql</File>
+				-->
+				
+				<!-- <File>Text/ru_RU/Quo_Civ_Text_ru_RU.sql</File> -->
+				<!-- Chinese Text -->
+				<File>Text/zh_Hans_CN/Quo_Main_Text_zh_Hans_CN.sql</File>
+				<File>Text/zh_Hans_CN/Quo_Main_Text_New_zh_Hans_CN.xml</File>
+				<File>Text/zh_Hans_CN/Quo_Policy_Text_zh_Hans_CN.sql</File>
+				<File>Text/zh_Hans_CN/Quo_Civ_Text_zh_Hans_CN.sql</File>
+				<File>Text/zh_Hans_CN/Quo_Civ_Text_New_zh_Hans_CN.xml</File>
+				<File>Text/zh_Hans_CN/Quo_Civ_Text_Tutorial_zh_Hans_CN.xml</File>
+				<File>Text/Quo_RandomAgendas_Text.sql</File>
+				
+      			</Items>
+    		</LocalizedText>
+
+    		<LocalizedText id="QUO_RULESET_CIVS_ONLY">
+           		<Properties>
+               			<RuleSet>QUO_RULESET_CIVS_ONLY</RuleSet>
+				<LoadOrder>10100</LoadOrder>
+           		</Properties>
+      			<Items>
+				<File Priority="1">Gameplay/Quo_AA_Setup_Code.sql</File>
+				<File Priority="1">MyOptions.sql</File>		
+				<!--
+				<File>Text/Quo_Civ_Text.sql</File>
+				<File>Text/Quo_Civ_Text_New.xml</File>
+				<File>Text/Quo_Civ_Text_Tutorial.xml</File>
+				-->
+				<!-- <File>Text/Quo_RandomAgendas_Text.sql</File> -->
+				
+				<!-- <File>Text/ru_RU/Quo_Civ_Text_ru_RU.sql</File> -->
+      			<!-- Chinese Text -->
+				<File>Text/zh_Hans_CN/Quo_Civ_Text_zh_Hans_CN.sql</File>
+				<File>Text/zh_Hans_CN/Quo_Civ_Text_New_zh_Hans_CN.xml</File>
+				<File>Text/zh_Hans_CN/Quo_Civ_Text_Tutorial_zh_Hans_CN.xml</File>
+				</Items>
+    		</LocalizedText>
+
+
+		<ImportFiles id="TUTORIAL_IMPORT_FILES">
+           		<Properties>
+               			<RuleSet>RULESET_EXPANSION_1</RuleSet>
+				<LoadOrder>10100</LoadOrder>
+           		</Properties>
+			<Items>
+				<File>Tutorial/TutorialScenarioBase.lua</File>
+			</Items>
+		</ImportFiles>
+
+
+		
+<GameplayScripts id="QUO_GAMESCRIPT_FILES">
+      			<Items>
+		        	<File>Scripts/Quo_GameLaunch.lua</File>
+      			</Items>
+		</GameplayScripts> 
+		
+
+	</Components>
+</Mod>
