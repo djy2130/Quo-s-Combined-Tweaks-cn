@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by kuku小夭 on 3/9/2018 8:00:00 AM -->
+<GameData>
+	<LocalizedText>
+		<Row Tag="QUO_LOC_TUTORIAL_WELCOME" Language="zh_Hans_CN">
+			<Text>欢迎来到Quo's Combined Tweaks模组。这个mod对游戏进行了一些改变 . 大多数标记更改为 [ICON_CAPITAL] 星星来帮助你确定什么已经改变了. 下面是一些需要注意的大项目:[NEWLINE][NEWLINE][ICON_BOLT]现在更新到上升和下降的扩展！寻找补丁更新在 CivFanatics.com. [NEWLINE][NEWLINE][ICON_BOLT] 秘密议程已经回来了！与你的对手建立外交关系，以看到他们秘密议程的“味道”。把议程安排好，看看你如何利用这种味道.[NEWLINE][NEWLINE][ICON_BOLT]默认的设置在 MyOptions.sql 已经做出一些改变，你可以调整里面的设置以适应您的喜好.[NEWLINE][NEWLINE][ICON_BOLT] 火箭靴! 所有单位（攻城单位除外）有+1移动.[NEWLINE][NEWLINE][ICON_BOLT]攻城单位有2个移动，3个射程，可以同一个回合移动和攻击.[NEWLINE][NEWLINE][ICON_BOLT]世界奇观是特别的! 取决于您在MyOptions的配置方式, 它们可以对周围格子放文化炸弹，剽窃其他文明的领土.[NEWLINE][NEWLINE][ICON_BOLT]城市边界扩张得更快——你要赶快行动![NEWLINE][NEWLINE][ICON_BOLT]如果你成为竞争对手的朋友，他们能送给你特殊的礼物。检查他们的历史议程，看看他们能提供什么.</Text>
+		</Row>
+	</LocalizedText>
+		<LocalizedText>
+		<Row Tag="QUO_LOC_TUTORIAL_RULES" Language="zh_Hans_CN">
+			<Text>建立城市在 Quo's Combined Tweaks mod 对游戏有一些不同的含义.[NEWLINE][NEWLINE][ICON_BOLT] 城墙需要足够的地基来支撑它们。你比以前更脆弱。你可以从军营获得古城墙基岩，从中世纪的世界奇观获得中世纪城墙基岩，从5个格子的海洋地块获得文艺复兴城墙基岩.[NEWLINE][NEWLINE][ICON_BOLT]海洋资源得到改善，比以往更优秀.[NEWLINE][NEWLINE][ICON_BOLT]港口收到 +2[ICON_GOLD] 金奖励从 邻近市中心旁边，使这些地方更具吸引力.[NEWLINE][NEWLINE][ICON_BOLT] 随着科技树前进，市中心收到奖励 [ICON_GOLD] 金 和 [ICON_PRODUCTION] 生产力 从 每2个相邻的海洋地块.[NEWLINE][NEWLINE][ICON_BOLT] 雪地和沙漠现在会出现产量很高的绿洲，这些改变会使得在任何地形建立城市更有吸引力.</Text>		
+		</Row>
+	</LocalizedText>
+</GameData>
+

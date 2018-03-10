@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by kuku小夭 on 3/9/2018 8:00:00 AM -->
+<GameData>
+
+	<LocalizedText>
+		<Row Tag="LOC_QUO_GOV_OLIGARCHY_DESC" Language="zh_Hans_CN">
+			<Text>+4[ICON_STRENGTH] 对近战, 枪兵, 近战船. 陆地单位有 +1[ICON_MOVEMENT] 在无人的地块.</Text>
+		</Row>
+	</LocalizedText>
+	<LocalizedText>
+		<Row Tag="LOC_QUO_GOV_AUTOCRACY_DESC" Language="zh_Hans_CN">
+			<Text>+1 对每个政府大楼的收益. +1[ICON_FAITH] 对每块与奇观相邻的地块.</Text>
+		</Row>
+	</LocalizedText>
+	<LocalizedText>
+		<Row Tag="LOC_QUO_GOV_CLASSICAL_DESC" Language="zh_Hans_CN">
+			<Text>有区域的城市 +1[ICON_AMENITIES] +1[ICON_HOUSING]. 移民 +3[ICON_MOVEMENT] 移动 和隐身.</Text>
+		</Row>
+	</LocalizedText>
+	<LocalizedText>
+		<Row Tag="LOC_QUO_GOV_THEOCRACY_DESC" Language="zh_Hans_CN">
+			<Text>宗教单位 +5[ICON_STRENGTH]. 主管提供 +0.5[ICON_FAITH]每个市民. +2[ICON_FAITH]+2[ICON_CULTURE]+1[ICON_PRODUCTION] 从寺庙.</Text>
+		</Row>
+	</LocalizedText>
+	<LocalizedText>
+		<Row Tag="LOC_QUO_GOV_MONARCHY_DESC" Language="zh_Hans_CN">
+			<Text>+1[ICON_HOUSING] 住房对每层城墙. 军营区2格内的农场+1[ICON_CULTURE] .</Text>
+		</Row>
+	</LocalizedText>
+	<LocalizedText>
+		<Row Tag="LOC_QUO_GOV_MERCHANT_DESC" Language="zh_Hans_CN">
+			<Text>+10%[ICON_GOLD] 在有主管的城市. +2[ICON_GOLD] 绿洲或自然奇观旁边.</Text>
+		</Row>
+	</LocalizedText>
+	<LocalizedText>
+		<Row Tag="LOC_QUO_GOV_FASCISM_DESC" Language="zh_Hans_CN">
+			<Text>+7[ICON_STRENGTH]对所有单位. 远程和反骑兵单位有 +2[ICON_RANGE]射程.</Text>
+		</Row>
+	</LocalizedText>
+	<LocalizedText>
+		<Row Tag="LOC_QUO_GOV_DEMOCRACY_DESC" Language="zh_Hans_CN">
+			<Text>+2[ICON_PRODUCTION], +1[ICON_HOUSING] 每个区域。区域释放文化炸弹.</Text>
+		</Row>
+	</LocalizedText>
+	<LocalizedText>
+		<Row Tag="LOC_QUO_GOV_COMMUNISM_DESC" Language="zh_Hans_CN">
+			<Text>主管提供 +0.4%[ICON_PRODUCTION]每个市民. 城市获得城市防御.</Text>
+		</Row>
+	</LocalizedText>
+
+
+
+
+	<LocalizedText>
+		<Row Tag="LOC_QUO_ABI_PIKEMAN_BARBARIAN_WEAK_PREVIEW" Language="zh_Hans_CN">
+			<Text>-10[ICON_STRENGTH] 对野蛮人枪兵</Text>
+		</Row>
+	</LocalizedText>
+
+	<LocalizedText>
+		<Row Tag="LOC_QUO_TRAIT_GENERIC_FRIENDS_NAME" Language="zh_Hans_CN">
+			<Text>[ICON_CAPITAL] 目前通用的友谊奖金</Text>
+		</Row>
+	</LocalizedText>
+	<LocalizedText>
+		<Row Tag="LOC_QUO_TRAIT_FRIENDS_GENERIC_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>下载的领导人将提供1的贸易路线，当你成为他们的朋友时.</Text>
+		</Row>
+	</LocalizedText>
+	<LocalizedText>
+		<Row Tag="LOC_QUO_BUILDING_RESOURCE_VICTORY_WIN_NAME" Language="zh_Hans_CN">
+			<Text>最终激活</Text>
+		</Row>
+	</LocalizedText>
+	<LocalizedText>
+		<Row Tag="LOC_QUO_PROJECT_RESOURCE_VICTORY_NAME_SHORT" Language="zh_Hans_CN">
+			<Text>[ICON_CAPITAL] 收获最终赢得胜利建立资源</Text>
+		</Row>
+	</LocalizedText>
+	<LocalizedText>
+		<Row Tag="LOC_QUO_PROJECT_RESOURCE_VICTORY_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>[ICON_CAPITAL]完成收割，最终赢得胜利的项目资源。你只能在你有足够多的资源博览会建立这个项目.</Text>
+		</Row>
+	</LocalizedText>
+	<LocalizedText>
+		<Row Tag="LOC_QUO_RESOURCE_ULTIMA_NAME" Language="zh_Hans_CN">
+			<Text>[ICON_CAPITAL] 最终提取</Text>
+		</Row>
+	</LocalizedText>
+	<LocalizedText>
+		<Row Tag="LOC_QUO_RESOURCE_VICTORY_NAME" Language="zh_Hans_CN">
+			<Text>豪华的胜利</Text>
+		</Row>
+	</LocalizedText>
+	<LocalizedText>
+		<Row Tag="LOC_QUO_RESOURCE_VICTORY_BLURB" Language="zh_Hans_CN">
+			<Text>控制比其他玩家更多的14份奢侈资源（最低3）修建收获最终的项目.</Text>
+		</Row>
+	</LocalizedText>
+	<LocalizedText>
+		<Row Tag="QUO_BUILDING_RESOURCE_VICTORY_WIN" Language="zh_Hans_CN">
+			<Text>豪华套房</Text>
+		</Row>
+	</LocalizedText>
+	<LocalizedText>
+		<Row Tag="QUO_LOC_BUILDING_AMBASSADOR_SUITE_NAME" Language="zh_Hans_CN">
+			<Text>大使套房</Text>
+		</Row>
+	</LocalizedText>
+	<LocalizedText>
+		<Row Tag="QUO_LOC_BUILDING_AMBASSADOR_SUITE_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>在建造中，提供一个自由的使者，可以派遣到一个城市。与动物园相互排斥.</Text>
+		</Row>
+	</LocalizedText>
+	<LocalizedText>
+		<Row Tag="QUO_LOC_TECH_ASTROLOGY_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>允许贸易商上船.</Text>
+		</Row>
+	</LocalizedText>
+	<LocalizedText>
+		<Row Tag="QUO_LOC_TECH_WRITING_DESCRIPTION" Language="zh_Hans_CN">
+			<Text></Text>
+		</Row>
+	</LocalizedText>
+	<LocalizedText>
+		<Row Tag="QUO_LOC_FRIENDS_AZTEC_GLOBAL_COMBAT_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>+4 从阿茲特克的礼物</Text>
+		</Row>
+	</LocalizedText>
+		<LocalizedText>
+		<Row Tag="QUO_LOC_FRIENDS_MAPUCHE_GLOBAL_COMBAT_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>+7 从马普切的礼物</Text>
+		</Row>
+	</LocalizedText>
+		<LocalizedText>
+		<Row Tag="QUO_LOC_FRIENDS_MONGOLIA_GLOBAL_COMBAT_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>+3 从蒙古的礼物</Text>
+		</Row>
+	</LocalizedText>
+		<LocalizedText>
+		<Row Tag="QUO_LOC_KHMER_GLOBAL_COMBAT_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>+2 从水渠</Text>
+		</Row>
+	</LocalizedText>
+	<LocalizedText>
+		<Row Tag="QUO_LOC_QUO_ABI_PIKEMAN_DEBUFF_PREVIEW" Language="zh_Hans_CN">
+			<Text>-5 [ICON_STRENGTH] 力量从相邻的反骑兵单位</Text>
+		</Row>
+	</LocalizedText>
+	<LocalizedText>
+		<Row Tag="LOC_QUO_OPTION_BORDER_SPEED_NAME" Language="zh_Hans_CN">
+			<Text>[ICON_CAPITAL] 边界速度</Text>
+		</Row>
+	</LocalizedText>
+	<LocalizedText>
+		<Row Tag="LOC_QUO_OPTION_BORDER_SPEED_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>[ICON_CAPITAL] 增加by Quo Mod. 增加边界扩张率.</Text>
+		</Row>
+	</LocalizedText>
+	<LocalizedText>
+		<Row Tag="LOC_QUO_BUILDING_OPTION_BORDERS_DUMMY_NAME" Language="zh_Hans_CN">
+			<Text>边境管理局</Text>
+		</Row>
+	</LocalizedText>
+	<LocalizedText>
+		<Row Tag="LOC_QUO_BUILDING_OPTION_ADMINISTRATION_DUMMY_NAME" Language="zh_Hans_CN">
+			<Text>[ICON_CAPITAL]Leader Throne</Text>
+		</Row>
+	</LocalizedText>
+	<LocalizedText>
+		<Row Tag="LOC_QUO_BUILDING_MONOPOLY_RESOURCE_CITRUS" Language="zh_Hans_CN">
+			<Text>[ICON_FOOD]Expo: Citrus</Text>
+		</Row>
+	</LocalizedText>
+
+	<LocalizedText>
+		<Row Tag="LOC_QUO_BUILDING_MONOPOLY_RESOURCE_COCOA" Language="zh_Hans_CN">
+			<Text>[ICON_GOLD]Expo: Cocoa</Text>
+		</Row>
+	</LocalizedText>
+	<LocalizedText>
+		<Row Tag="LOC_QUO_BUILDING_MONOPOLY_RESOURCE_COFFEE" Language="zh_Hans_CN">
+			<Text>[ICON_CULTURE]Expo: Coffee</Text>
+		</Row>
+	</LocalizedText>
+	<LocalizedText>
+		<Row Tag="LOC_QUO_BUILDING_MONOPOLY_RESOURCE_COTTON" Language="zh_Hans_CN">
+			<Text>[ICON_GOLD]Expo: Cotton</Text>
+		</Row>
+	</LocalizedText>
+	<LocalizedText>
+		<Row Tag="LOC_QUO_BUILDING_MONOPOLY_RESOURCE_DIAMONDS" Language="zh_Hans_CN">
+			<Text>[ICON_GOLD]Expo: Diamonds</Text>
+		</Row>
+	</LocalizedText>
+	<LocalizedText>
+		<Row Tag="LOC_QUO_BUILDING_MONOPOLY_RESOURCE_DYES" Language="zh_Hans_CN">
+			<Text>[ICON_FAITH]Expo: Dyes</Text>
+		</Row>
+	</LocalizedText>
+	<LocalizedText>
+		<Row Tag="LOC_QUO_BUILDING_MONOPOLY_RESOURCE_FURS" Language="zh_Hans_CN">
+			<Text>[ICON_GOLD]Expo: Furs</Text>
+		</Row>
+	</LocalizedText>
+	<LocalizedText>
+		<Row Tag="LOC_QUO_BUILDING_MONOPOLY_RESOURCE_GYPSUM" Language="zh_Hans_CN">
+			<Text>[ICON_PRODUCTION]Expo: Gypsum</Text>
+		</Row>
+	</LocalizedText>
+	<LocalizedText>
+		<Row Tag="LOC_QUO_BUILDING_MONOPOLY_RESOURCE_INCENSE" Language="zh_Hans_CN">
+			<Text>[ICON_FAITH]Expo: Incense</Text>
+		</Row>
+	</LocalizedText>
+	<LocalizedText>
+		<Row Tag="LOC_QUO_BUILDING_MONOPOLY_RESOURCE_IVORY" Language="zh_Hans_CN">
+			<Text>[ICON_PRODUCTION]Expo: Ivory</Text>
+		</Row>
+	</LocalizedText>
+	<LocalizedText>
+		<Row Tag="LOC_QUO_BUILDING_MONOPOLY_RESOURCE_MARBLE" Language="zh_Hans_CN">
+			<Text>[ICON_CULTURE]Expo: Marble</Text>
+		</Row>
+	</LocalizedText>
+	<LocalizedText>
+		<Row Tag="LOC_QUO_BUILDING_MONOPOLY_RESOURCE_MERCURY" Language="zh_Hans_CN">
+			<Text>[ICON_SCIENCE]Expo: Mercury</Text>
+		</Row>
+	</LocalizedText>
+	<LocalizedText>
+		<Row Tag="LOC_QUO_BUILDING_MONOPOLY_RESOURCE_PEARLS" Language="zh_Hans_CN">
+			<Text>[ICON_FAITH]Expo: Pearls</Text>
+		</Row>
+	</LocalizedText>
+	<LocalizedText>
+		<Row Tag="LOC_QUO_BUILDING_MONOPOLY_RESOURCE_SALT" Language="zh_Hans_CN">
+			<Text>[ICON_FOOD]Expo: Salt</Text>
+		</Row>
+	</LocalizedText>
+	<LocalizedText>
+		<Row Tag="LOC_QUO_BUILDING_MONOPOLY_RESOURCE_SILK" Language="zh_Hans_CN">
+			<Text>[ICON_CULTURE]Expo: Silk</Text>
+		</Row>
+	</LocalizedText>
+	<LocalizedText>
+		<Row Tag="LOC_QUO_BUILDING_MONOPOLY_RESOURCE_SILVER" Language="zh_Hans_CN">
+			<Text>[ICON_GOLD]Expo: Silver</Text>
+		</Row>
+	</LocalizedText>
+	<LocalizedText>
+		<Row Tag="LOC_QUO_BUILDING_MONOPOLY_RESOURCE_SPICES" Language="zh_Hans_CN">
+			<Text>[ICON_FOOD]Expo: Spices</Text>
+		</Row>
+	</LocalizedText>
+	<LocalizedText>
+		<Row Tag="LOC_QUO_BUILDING_MONOPOLY_RESOURCE_SUGAR" Language="zh_Hans_CN">
+			<Text>[ICON_FOOD]Expo: Sugar</Text>
+		</Row>
+	</LocalizedText>
+	<LocalizedText>
+		<Row Tag="LOC_QUO_BUILDING_MONOPOLY_RESOURCE_TEA" Language="zh_Hans_CN">
+			<Text>[ICON_SCIENCE]Expo: Tea</Text>
+		</Row>
+	</LocalizedText>
+	<LocalizedText>
+		<Row Tag="LOC_QUO_BUILDING_MONOPOLY_RESOURCE_TOBACCO" Language="zh_Hans_CN">
+			<Text>[ICON_FAITH]Expo: Tobacco</Text>
+		</Row>
+	</LocalizedText>
+	<LocalizedText>
+		<Row Tag="LOC_QUO_BUILDING_MONOPOLY_RESOURCE_TRUFFLES" Language="zh_Hans_CN">
+			<Text>[ICON_GOLD]Expo: Truffles</Text>
+		</Row>
+	</LocalizedText>
+	<LocalizedText>
+		<Row Tag="LOC_QUO_BUILDING_MONOPOLY_RESOURCE_WHALES" Language="zh_Hans_CN">
+			<Text>[ICON_FAITH]Expo: Whales</Text>
+		</Row>
+	</LocalizedText>
+	<LocalizedText>
+		<Row Tag="LOC_QUO_BUILDING_MONOPOLY_RESOURCE_WINE" Language="zh_Hans_CN">
+			<Text>[ICON_FOOD]Expo: Wine</Text>
+		</Row>
+	</LocalizedText>
+	<LocalizedText>
+		<Row Tag="LOC_QUO_BUILDING_MONOPOLY_RESOURCE_JADE" Language="zh_Hans_CN">
+			<Text>[ICON_CULTURE]Expo: Jade</Text>
+		</Row>
+	</LocalizedText>
+	<LocalizedText>
+		<Row Tag="QUO_LOC_UNIT_WATCHTOWER_NAME" Language="zh_Hans_CN">
+			<Text>瞭望塔</Text>
+		</Row>
+	</LocalizedText>
+	<LocalizedText>
+		<Row Tag="QUO_LOC_UNIT_WATCHTOWER_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>瞭望塔提供视觉在大面积。他们可以被敌人的作战单位占领.</Text>
+		</Row>
+	</LocalizedText>
+</GameData>
+
+
+

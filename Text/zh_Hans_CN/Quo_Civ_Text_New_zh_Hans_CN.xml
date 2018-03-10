@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by kuku小夭 on 3/9/2018 8:00:00 AM -->
+<GameData>
+
+	<LocalizedText>
+		<Row Tag="LOC_QUO_UNIT_INDONESIA_WARRIOR_MONK_NAME" Language="zh_Hans_CN">
+			<Text>僧伽和尚</Text>
+		</Row>
+	</LocalizedText>
+		<LocalizedText>
+		<Row Tag="LOC_QUO_UNIT_INDONESIA_WARRIOR_MONK_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>高棉的独特单位。通过水渠解锁. 你的每个水渠得到 +2 [ICON_STRENGTH] 战力.</Text>
+		</Row>
+	</LocalizedText>
+
+	<LocalizedText>
+		<Row Tag="LOC_QUO_BUILDING_PALACE_ANNEX_NAME" Language="zh_Hans_CN">
+			<Text>宫院附属建筑</Text>
+		</Row>
+	</LocalizedText>
+		<LocalizedText>
+		<Row Tag="QUO_KHMER_RIVER_HOLY_ADJ" Language="zh_Hans_CN">
+			<Text>+2 [ICON_FAITH] 从河流</Text>
+		</Row>
+	</LocalizedText>
+
+	<LocalizedText>
+		<Row Tag="QUO_LOC_ABILITY_ANTI_MELEE_MODIFIER_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>+10 对步兵</Text>
+		</Row>
+	</LocalizedText>
+	<LocalizedText>
+		<Row Tag="QUO_LOC_ZIG_ADJ" Language="zh_Hans_CN">
+			<Text>+1 每相邻的金字形神塔</Text>
+		</Row>
+	</LocalizedText>
+	<LocalizedText>
+		<Row Tag="QUO_LOC_GREATWALL_ADJ" Language="zh_Hans_CN">
+			<Text>+1 每2个相邻的长城</Text>
+		</Row>
+	</LocalizedText>
+	<LocalizedText>
+		<Row Tag="QUO_LOC_SPHINX_CULT_ADJ" Language="zh_Hans_CN">
+			<Text>+1 [ICON_CULTURE] 每相邻的狮身人面像</Text>
+		</Row>
+	</LocalizedText>
+	<LocalizedText>
+		<Row Tag="QUO_LOC_SPHINX_FAI_ADJ" Language="zh_Hans_CN">
+			<Text>+1 [ICON_FAITH] 每相邻的狮身人面像</Text>
+		</Row>
+	</LocalizedText>
+	<LocalizedText>
+		<Row Tag="QUO_LOC_RUSSIA_IZ_ADJACENCY" Language="zh_Hans_CN">
+			<Text>+1 [ICON_PRODUCTION] 相邻的苔原山</Text>
+		</Row>
+	</LocalizedText>
+	<LocalizedText>
+		<Row Tag="QUO_LOC_SPAIN_ADJACENCY_COM" Language="zh_Hans_CN">
+			<Text>+7 [ICON_GOLD] 毗邻自然奇观</Text>
+		</Row>
+	</LocalizedText>
+	<LocalizedText>
+		<Row Tag="QUO_LOC_EXTRA_VISION" Language="zh_Hans_CN">
+			<Text>+1 视力</Text>
+		</Row>
+	</LocalizedText>
+	<LocalizedText>
+		<Row Tag="QUO_LOC_BUILDING_TLACHTLI_DESCRIPTION" Language="zh_Hans_CN">
+			<Text> [ICON_CAPITAL] (Quo Mod: 提供额外的打击点和攻击城市中心的能力.)</Text>
+		</Row>
+	</LocalizedText>
+	<LocalizedText>
+		<Row Tag="LOC_QUO_RESOURCE_TURQUOISE" Language="zh_Hans_CN">
+			<Text>Turquoise</Text>
+		</Row>
+	</LocalizedText>
+	<LocalizedText>
+		<Row Tag="QUO_LOC_TEMPLO_MAYOR_NAME" Language="zh_Hans_CN">
+			<Text>Templo Mayor</Text>
+		</Row>
+	</LocalizedText>
+	<LocalizedText>
+		<Row Tag="QUO_LOC_TEMPLO_MAYOR_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>一个独特的世界奇迹。只有阿兹台克人能建造. 增加 +50% [ICON_PRODUCTION] 对建筑 Tlachtli, 移除阿兹特克建设者收到的惩罚, 每当娱乐区完成时，将收到一个免费的工人. 城市的市中心失去 -4 [ICON_FOOD] 食物每回合.</Text>
+		</Row>
+	</LocalizedText>
+	<LocalizedText>
+		<Row Tag="QUO_PROJECT_BRAZILWOOD_NAME" Language="zh_Hans_CN">
+			<Text>巴西革命</Text>
+		</Row>
+	</LocalizedText>
+	<LocalizedText>
+		<Row Tag="QUO_PROJECT_BRAZILWOOD_SHORT_NAME" Language="zh_Hans_CN">
+			<Text>巴西革命</Text>
+		</Row>
+	</LocalizedText>
+	<LocalizedText>
+		<Row Tag="QUO_PROJECT_BRAZILWOOD_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>只有巴西能建造。需要一个有街头狂欢的城市。提供一次性的巨大爆发 [ICON_GREATPERSON] 伟人点和解锁建筑苏巴西木营能力.</Text>
+		</Row>
+	</LocalizedText>
+	<LocalizedText>
+		<Row Tag="QUO_LOC_IMPROVEMENT_BRAZILWOOD_CAMP_NAME" Language="zh_Hans_CN">
+			<Text>巴西木营</Text>
+		</Row>
+	</LocalizedText>
+	<LocalizedText>
+		<Row Tag="QUO_LOC_IMPROVEMENT_BRAZILWOOD_CAMP_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>+2 [ICON_GOLD] 金对雨林地块.</Text>
+		</Row>
+	</LocalizedText>
+	<LocalizedText>
+		<Row Tag="QUO_LOC_MOD_MELEE_NAVAL_VS_DISTRICTS_PREVIEW" Language="zh_Hans_CN">
+			<Text>+12 [ICON_STRENGTH] 力量在区域</Text>
+		</Row>
+	</LocalizedText>
+	<LocalizedText>
+		<Row Tag="LOC_QUO_ABI_MELEE_NAVAL_VS_DISTRICTS_NAME" Language="zh_Hans_CN">
+			<Text>沿海入侵</Text>
+		</Row>
+	</LocalizedText>
+	<LocalizedText>
+		<Row Tag="LOC_QUO_ABI_MELEE_NAVAL_VS_DISTRICTS_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>+8 [ICON_STRENGTH] 力量在区域</Text>
+		</Row>
+	</LocalizedText>
+	
+</GameData>
+
