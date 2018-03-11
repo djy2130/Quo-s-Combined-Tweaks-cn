@@ -89,12 +89,12 @@ UPDATE LocalizedText SET Text=Text || '  [ICON_CAPITAL](Quo Mod: 提供 +2 [ICON
 
 
 -- Walls
-UPDATE LocalizedText SET Text=Text || '  [ICON_CAPITAL](Quo Mod: 为了建造城墙需要古老的基岩。古老的基岩是当你建立军营区时自动建立.)' WHERE Tag='LOC_BUILDING_WALLS_DESCRIPTION' AND (select Value from tblquooptions where optionId='QUO_OPTION_WALLS_HAVE_PREREQS') > 0;
+UPDATE LocalizedText SET Text=Text || '  [ICON_CAPITAL](Quo Mod: 为了建造古城墙需要古老的基岩。古老的基岩是当你建立军营区时自动建立.)' WHERE Tag='LOC_BUILDING_WALLS_DESCRIPTION' AND (select Value from tblquooptions where optionId='QUO_OPTION_WALLS_HAVE_PREREQS') > 0;
 
-UPDATE LocalizedText SET Text=Text || '  [ICON_CAPITAL](Quo Mod: 要么需要古城墙，要么需要中世纪的基石才能建造。如果这座城市获得5个深海地块，中世纪的基岩就自动建立起来了.)' WHERE Tag='LOC_BUILDING_CASTLE_DESCRIPTION' AND (select Value from tblquooptions where optionId='QUO_OPTION_WALLS_HAVE_PREREQS') > 0;
+UPDATE LocalizedText SET Text=Text || '  [ICON_CAPITAL](Quo Mod: 为了建造中世纪城墙需要中世纪的基岩。中世纪的基岩是当你的城市拥有古城墙，或世界奇观的时候自动建立.)' WHERE Tag='LOC_BUILDING_CASTLE_DESCRIPTION' AND (select Value from tblquooptions where optionId='QUO_OPTION_WALLS_HAVE_PREREQS') > 0;
 
 
-UPDATE LocalizedText SET Text=Text || '  [ICON_CAPITAL](Quo Mod: 需要一座城堡或文艺复兴时期的基石才能建成。复兴的基石是自动建立，如果这些城市获得5个深水海洋瓷砖.)' WHERE Tag='LOC_BUILDING_STAR_FORT_DESCRIPTION' AND (select Value from tblquooptions where optionId='QUO_OPTION_WALLS_HAVE_PREREQS') > 0;
+UPDATE LocalizedText SET Text=Text || '  [ICON_CAPITAL](Quo Mod: 为了建造文艺复兴城墙需要文艺复兴基岩。文艺复兴的基岩是当你的城市拥有中世纪城墙，或这些城市获得5个深水海洋地块时自动建立.)' WHERE Tag='LOC_BUILDING_STAR_FORT_DESCRIPTION' AND (select Value from tblquooptions where optionId='QUO_OPTION_WALLS_HAVE_PREREQS') > 0;
 
 
 
@@ -105,8 +105,8 @@ VALUES('zh_Hans_CN', '古老的基岩', 'LOC_QUO_BUILDING_BEDROCK_ANCIENT_NAME')
 	('zh_Hans_CN', '中世纪的基岩', 'LOC_QUO_BUILDING_BEDROCK_MEDIEVAL_NAME'),
 	('zh_Hans_CN', '文艺复兴的基岩', 'LOC_QUO_BUILDING_BEDROCK_RENAISSANCE_NAME'),
 	('zh_Hans_CN', '修建古城墙所需的基础。在首都会自动建立，任何城市建立军营区也会建立.', 'LOC_QUO_BUILDING_BEDROCK_ANCIENT_DESCRIPTION'),
-	('zh_Hans_CN', '建造城堡墙所需的基础。在首都和任何获得古城墙或世界奇迹的城市都会自动建立起来.', 'LOC_QUO_BUILDING_BEDROCK_MEDIEVAL_DESCRIPTION'),
-	('zh_Hans_CN', '建造复兴城墙所需的基础。在首都和任何获得城堡，或拥有5格的深海地块的城市都会自动建立起来.', 'LOC_QUO_BUILDING_BEDROCK_RENAISSANCE_DESCRIPTION');
+	('zh_Hans_CN', '修建中世纪城墙所需的基础。在首都和任何获得古城墙，或世界奇迹的城市都会自动建立起来.', 'LOC_QUO_BUILDING_BEDROCK_MEDIEVAL_DESCRIPTION'),
+	('zh_Hans_CN', '修建文艺复兴城墙所需的基础。在首都和任何获得中世纪城墙，或拥有5格深海地块的城市都会自动建立起来.', 'LOC_QUO_BUILDING_BEDROCK_RENAISSANCE_DESCRIPTION');
 
 --
 
@@ -129,7 +129,7 @@ UPDATE LocalizedText SET Text=Text || '  [ICON_CAPITAL](Quo Mod: 这建筑提供
 UPDATE LocalizedText SET Text=Text || '  [ICON_CAPITAL](Quo Mod: 也提供 +1 [ICON_FOOD] 食物对城市的热带雨林地块.)' WHERE Tag='LOC_BUILDING_HANGING_GARDENS_DESCRIPTION';
 
 
-UPDATE LocalizedText SET Text=Text || '  [ICON_CAPITAL](Quo Mod: 这个奇迹不再需要邻近的区域.)' WHERE Tag='LOC_BUILDING_GREAT_LIGHTHOUSE_DESCRIPTION' AND (select Value from tblquooptions where optionId='QUO_OPTION_CAN_FREE_PLACE_WONDERS') > 0;
+/* UPDATE LocalizedText SET Text=Text || '  [ICON_CAPITAL](Quo Mod: 这个奇迹不再需要邻近的区域.)' WHERE Tag='LOC_BUILDING_GREAT_LIGHTHOUSE_DESCRIPTION' AND (select Value from tblquooptions where optionId='QUO_OPTION_CAN_FREE_PLACE_WONDERS') > 0;
 UPDATE LocalizedText SET Text=Text || '  [ICON_CAPITAL](Quo Mod: 这个奇迹不再需要邻近的区域.)' WHERE Tag='LOC_BUILDING_COLOSSUS_DESCRIPTION' AND (select Value from tblquooptions where optionId='QUO_OPTION_CAN_FREE_PLACE_WONDERS') > 0;
 UPDATE LocalizedText SET Text=Text || '  [ICON_CAPITAL](Quo Mod: 这个奇迹不再需要邻近的区域.)' WHERE Tag='LOC_BUILDING_COLOSSEUM_DESCRIPTION' AND (select Value from tblquooptions where optionId='QUO_OPTION_CAN_FREE_PLACE_WONDERS') > 0;
 UPDATE LocalizedText SET Text=Text || '  [ICON_CAPITAL](Quo Mod: 这个奇迹不再需要邻近的区域.)' WHERE Tag='LOC_BUILDING_GREAT_LIBRARY_DESCRIPTION' AND (select Value from tblquooptions where optionId='QUO_OPTION_CAN_FREE_PLACE_WONDERS') > 0;
@@ -149,6 +149,7 @@ UPDATE LocalizedText SET Text=Text || '  [ICON_CAPITAL](Quo Mod: 这个奇迹不
 UPDATE LocalizedText SET Text=Text || '  [ICON_CAPITAL](Quo Mod: 这个奇迹不再需要邻近的区域.)' WHERE Tag='LOC_BUILDING_ESTADIO_DO_MARACANA_DESCRIPTION' AND (select Value from tblquooptions where optionId='QUO_OPTION_CAN_FREE_PLACE_WONDERS') > 0;
 UPDATE LocalizedText SET Text=Text || '  [ICON_CAPITAL](Quo Mod: 这个奇迹不再需要邻近的区域.)' WHERE Tag='LOC_BUILDING_SYDNEY_OPERA_HOUSE_DESCRIPTION' AND (select Value from tblquooptions where optionId='QUO_OPTION_CAN_FREE_PLACE_WONDERS') > 0;
 
+ */
 -- wonder era names
 UPDATE LocalizedText SET Text= Text || ' (Ancient)' WHERE Tag='LOC_BUILDING_HANGING_GARDENS_NAME' ;
 UPDATE LocalizedText SET Text= Text || ' (Ancient)' WHERE Tag='LOC_BUILDING_ORACLE_NAME' ;

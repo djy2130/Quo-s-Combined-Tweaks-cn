@@ -23,6 +23,12 @@
 			<Text>+2 [ICON_FAITH] from Rivers</Text>
 		</Row>
 	</LocalizedText>
+	
+	<LocalizedText>
+		<Row Tag="QUO_LOC_NUBIA_STRENGTH" Language="en_US">
+			<Text>-3 from Nubian Ta-Seti trait</Text>
+		</Row>
+	</LocalizedText>
 
 	<LocalizedText>
 		<Row Tag="QUO_LOC_ABILITY_ANTI_MELEE_MODIFIER_DESCRIPTION" Language="en_US">

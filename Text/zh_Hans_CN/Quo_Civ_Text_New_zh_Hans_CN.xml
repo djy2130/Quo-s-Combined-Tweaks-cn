@@ -23,7 +23,13 @@
 			<Text>+2 [ICON_FAITH] 从河流</Text>
 		</Row>
 	</LocalizedText>
-
+	
+	<LocalizedText>
+		<Row Tag="QUO_LOC_NUBIA_STRENGTH" Language="en_US">
+			<Text>-3 从努比亚的近战惩罚特性</Text>
+		</Row>
+	</LocalizedText>
+	
 	<LocalizedText>
 		<Row Tag="QUO_LOC_ABILITY_ANTI_MELEE_MODIFIER_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>+10 对步兵</Text>

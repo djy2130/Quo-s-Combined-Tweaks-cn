@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Mod id="b591acd1-275b-402e-9da1-4c157a1718a6" version="6.0.4">
+<Mod id="b591acd1-275b-402e-9da1-4c157a1718a6" version="6.0.5">
 	<Properties>
 		<Name>QUO_LOC_MOD_NAME</Name>
 		<Teaser>QUO_LOC_MOD_TEASER</Teaser>		
-		<Description>现在更新为上升和下降。这个mod结合了一些小的调整和游戏调整。使用高级设置屏幕在标准规则或文明爱好者之间选择。一个MyOptions.sql文件中禁用或启用其他功能的mod文件夹。完整的mod细节，访问 https://forums.civfanatics.com/resources/quos-combined-tweaks.25703/</Description>
+		<Description>现在更新到迭起兴衰。这个mod集合了一些小的游戏调整。使用高级设置屏幕在标准规则或文明爱好者之间选择。在mod文件夹中的MyOptions.sql文件启用或禁用其他的功能。完整的mod细节，访问 https://forums.civfanatics.com/resources/quos-combined-tweaks.25703/</Description>
 		<Authors>Quo，（翻译:kuku小夭）</Authors>
 	</Properties>
   	<LocalizedText>
         	<Text id="QUO_LOC_MOD_NAME">
-            		<en_US>Quo's Combined Tweaks: Rise and Fall ALPHA (CivFanatics Edition) v6.0.4</en_US>
-					<zh_Hans_CN>Quo's Combined Tweaks v6.0.4</zh_Hans_CN>
+            		<en_US>Quo's Combined Tweaks: Rise and Fall ALPHA (CivFanatics Edition) v6.0.5</en_US>
+					<zh_Hans_CN>Quo's Combined Tweaks v6.0.5</zh_Hans_CN>
         	</Text>
         	<Text id="QUO_LOC_MOD_TEASER">
             		<en_US>Combines Quos mods into a recommended collection. Use the Advanced Setup screen to select between Standard Rules or Civilization Buffs Only.</en_US>
-					<zh_Hans_CN>Combines Quos mods 推荐收藏. 使用高级设置屏幕在标准规则或文明爱好者之间选择.</zh_Hans_CN>
+					<zh_Hans_CN>Combines Quos mods 推荐收藏. 使用高级设置在标准规则或文明爱好者之间选择.</zh_Hans_CN>
         	</Text>        
     	</LocalizedText>  
 
@@ -69,7 +69,7 @@
 		<File>Text/Quo_RandomAgendas_Text.sql</File>
 		
 		<!-- Russian Text -->
-		<!--<File>Text/ru_RU/Quo_Civ_Text_ru_RU.sql</File>-->
+		<!-- <File>Text/ru_RU/Quo_Civ_Text_ru_RU.sql</File>-->
 		<!-- Chinese Text -->
 		<File>Text/zh_Hans_CN/Quo_Main_Text_zh_Hans_CN.sql</File>
 		<File>Text/zh_Hans_CN/Quo_Main_Text_New_zh_Hans_CN.xml</File>
@@ -77,7 +77,6 @@
 		<File>Text/zh_Hans_CN/Quo_Civ_Text_zh_Hans_CN.sql</File>
 		<File>Text/zh_Hans_CN/Quo_Civ_Text_New_zh_Hans_CN.xml</File>
 		<File>Text/zh_Hans_CN/Quo_Civ_Text_Tutorial_zh_Hans_CN.xml</File>
-		
 		
 		<File>QuoDependencies.dep</File>
 		<File>Icons/Quo_Icons.xml</File>
@@ -109,23 +108,21 @@
       			<Items>
 				<File Priority="10">Gameplay/Quo_AA_Setup_Code.sql</File>
 				<File Priority="8">MyOptions.sql</File>		
-				
 				<!--
 				<File>Text/Quo_Main_Text.sql</File>
 				<File>Text/Quo_Policy_Text.sql</File>
 				<File>Text/Quo_Civ_Text.sql</File>
 				<File>Text/Quo_Civ_Text_New.xml</File>
 				<File>Text/Quo_Main_Text_New.xml</File>
-				-->
 				
-				<!--<File>Text/ru_RU/Quo_Civ_Text_ru_RU.sql</File>-->
+				<File>Text/ru_RU/Quo_Civ_Text_ru_RU.sql</File>
+				-->
 				<!-- Chinese Text -->
 				<File>Text/zh_Hans_CN/Quo_Main_Text_zh_Hans_CN.sql</File>
 				<File>Text/zh_Hans_CN/Quo_Policy_Text_zh_Hans_CN.sql</File>
 				<File>Text/zh_Hans_CN/Quo_Civ_Text_zh_Hans_CN.sql</File>
 				<File>Text/zh_Hans_CN/Quo_Civ_Text_New_zh_Hans_CN.xml</File>
-				<File>Text/zh_Hans_CN/Quo_Main_Text_New_zh_Hans_CN.xml</File>
-				
+				<File>Text/zh_Hans_CN/Quo_Main_Text_New_zh_Hans_CN.xml
       			</Items>
     		</LocalizedText>
 	</Settings>
@@ -218,10 +215,9 @@
 				<File>Text/Quo_Policy_Text.sql</File>
 				<File>Text/Quo_Civ_Text.sql</File>
 				<File>Text/Quo_Civ_Text_New.xml</File>
-				<File>Text/Quo_Civ_Text_Tutorial.xml</File>
+				<File>Text/Quo_Civ_Text_Tutorial.xml</File>	
 				<File>Text/Quo_RandomAgendas_Text.sql</File>
 				-->
-				
 				<!-- <File>Text/ru_RU/Quo_Civ_Text_ru_RU.sql</File> -->
 				<!-- Chinese Text -->
 				<File>Text/zh_Hans_CN/Quo_Main_Text_zh_Hans_CN.sql</File>
@@ -231,7 +227,6 @@
 				<File>Text/zh_Hans_CN/Quo_Civ_Text_New_zh_Hans_CN.xml</File>
 				<File>Text/zh_Hans_CN/Quo_Civ_Text_Tutorial_zh_Hans_CN.xml</File>
 				<File>Text/Quo_RandomAgendas_Text.sql</File>
-				
       			</Items>
     		</LocalizedText>
 
@@ -249,13 +244,12 @@
 				<File>Text/Quo_Civ_Text_Tutorial.xml</File>
 				-->
 				<!-- <File>Text/Quo_RandomAgendas_Text.sql</File> -->
-				
 				<!-- <File>Text/ru_RU/Quo_Civ_Text_ru_RU.sql</File> -->
-      			<!-- Chinese Text -->
+				<!-- Chinese Text -->
 				<File>Text/zh_Hans_CN/Quo_Civ_Text_zh_Hans_CN.sql</File>
 				<File>Text/zh_Hans_CN/Quo_Civ_Text_New_zh_Hans_CN.xml</File>
 				<File>Text/zh_Hans_CN/Quo_Civ_Text_Tutorial_zh_Hans_CN.xml</File>
-				</Items>
+      			</Items>
     		</LocalizedText>
 
 

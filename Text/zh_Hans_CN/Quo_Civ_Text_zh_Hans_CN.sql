@@ -69,7 +69,7 @@ UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: 收到 20[ICO
 
 
 -- China
-UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: 收到 +1 各自的 [ICON_FAITH][ICON_PRODUCTION][ICON_CULTURE][ICON_GOLD][ICON_SCIENCE] 长城每边的产量.)' WHERE Tag='LOC_IMPROVEMENT_GREAT_WALL_DESCRIPTION' ;
+UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: 任何一个区域每邻接两个长城，则+1各自的 [ICON_FAITH][ICON_PRODUCTION][ICON_CULTURE][ICON_GOLD][ICON_SCIENCE] .)' WHERE Tag='LOC_IMPROVEMENT_GREAT_WALL_DESCRIPTION' ;
 
 UPDATE LocalizedText SET Text= '  [ICON_CAPITAL] (Quo Mod: [ICON_TechBoosted] 科技和 [ICON_CivicBoosted] 公民尤里卡增强 10%. 开始时有 25[ICON_SCIENCE] 科学, 基于游戏速度调整. 在城市的4格内的长城收到古城墙基岩，建立古城墙时不需要军营区.)' WHERE Tag='LOC_TRAIT_CIVILIZATION_DYNASTIC_CYCLE_EXPANSION1_DESCRIPTION' ;
 
@@ -124,15 +124,17 @@ UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: 提供+1[ICON
 
 
 -- Spain
-UPDATE LocalizedText SET Text= '[ICON_CAPITAL] (Quo Mod: +4[ICON_GREATPERSON] 先知伟人点对每一个击杀. 单位收到+4[ICON_STRENGTH] 力量 对敌人宗教的对手, 攻城单位有 +1[ICON_MOVEMENT] 移动力在敌人宗教城市边界内. 审判官 +1 次数.)' WHERE Tag='LOC_TRAIT_LEADER_EL_ESCORIAL_DESCRIPTION' ;
+UPDATE LocalizedText SET Text= Text || '[ICON_CAPITAL] (Quo Mod: +4[ICON_GREATPERSON]预言家点数对每一个击杀.)' WHERE Tag='LOC_TRAIT_LEADER_EL_ESCORIAL_DESCRIPTION' ;
 
-UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: 代表团改良不再破坏森林或雨林. +1 [ICON_SCIENCE] 科学奖励.)' WHERE Tag='LOC_IMPROVEMENT_MISSION_DESCRIPTION' ;
+UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: 传教团改良不再破坏森林或雨林.)' WHERE Tag='LOC_IMPROVEMENT_MISSION_DESCRIPTION' ;
 
-UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: +7[ICON_GOLD] 金在邻近自然奇观的商业中心.)' WHERE Tag='LOC_TRAIT_CIVILIZATION_TREASURE_FLEET_EXPANSION1_DESCRIPTION' ;
+UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: 自然奇观提供 +7[ICON_GOLD]金于邻近的商业中心. 当市中心邻近传教团改良时自动收到文艺复兴的基岩.)' WHERE Tag='LOC_TRAIT_CIVILIZATION_TREASURE_FLEET_EXPANSION1_DESCRIPTION' ;
 
 
 -- France
 UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: +1 [ICON_HOUSING] 住房. 对相邻地块放文化炸弹.)' WHERE Tag='LOC_IMPROVEMENT_CHATEAU_DESCRIPTION' ;
+
+UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: 收到文艺复兴的基岩当城市的3格内修建了堡垒改良设施，可以凭此修建文艺复兴城墙.)' WHERE Tag='LOC_TRAIT_CIVILIZATION_WONDER_TOURISM_DESCRIPTION' ;
 
 UPDATE LocalizedText SET Text= '[ICON_CAPITAL] (Quo Mod: +1 外交能见度. 解锁城堡之后获得其他文明的永久能见度. 城堡得到免费间谍. +100% [ICON_PRODUCTION] 生产力对间谍, 间谍获得一个免费升级.)' WHERE Tag='LOC_TRAIT_LEADER_FLYING_SQUADRON_DESCRIPTION' ;
 
@@ -147,7 +149,7 @@ UPDATE LocalizedText SET Text= '[ICON_CAPITAL] (Quo Mod: +1 外交能见度. 解
 UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: 立即获得1自由人口在这个城市.)' WHERE Tag='LOC_DISTRICT_WATER_STREET_CARNIVAL_DESCRIPTION' ;
 UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: 立即获得1自由人口在这个城市.)' WHERE Tag='LOC_DISTRICT_STREET_CARNIVAL_DESCRIPTION' ;
 
-UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: 没有来自热带雨林地块的负面吸引力. 能建设巴西革命项目, 这提供一次性的巨大 [ICON_GREATPErson] 伟人点和解锁巴西木营改良. 巴西木营提供 [ICON_GOLD]金对于每级的魅力，以及增加旅游业在飞行解锁后.)' WHERE Tag='LOC_TRAIT_CIVILIZATION_AMAZON_DESCRIPTION' ;
+UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: +2 魅力从雨林. 能建设巴西革命项目, 这提供一次性的巨大 [ICON_GREATPErson] 伟人点和解锁巴西木营改良. 巴西木营提供 [ICON_GOLD] 金对于每级的魅力, 以及在飞行解锁后增加旅游业.)' WHERE Tag='LOC_TRAIT_CIVILIZATION_AMAZON_DESCRIPTION' ;
 
 
 
@@ -178,7 +180,7 @@ UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: 作为墙提�
 
 
 -- Poland
-UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: 反骑兵单位+1[ICON_MOVEMENT] 移动.)' WHERE Tag='LOC_TRAIT_CIVILIZATION_GOLDEN_LIBERTY_DESCRIPTION' ;
+UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: 反骑兵单位+2[ICON_MOVEMENT] 移动.)' WHERE Tag='LOC_TRAIT_CIVILIZATION_GOLDEN_LIBERTY_DESCRIPTION' ;
 
 UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: 可以花费 [ICON_FAITH]信仰去购买商业中心的建筑物.)' WHERE Tag='LOC_TRAIT_LEADER_LITHUANIAN_UNION_DESCRIPTION' ;
 
@@ -191,9 +193,14 @@ UPDATE LocalizedText SET Text= Text || '[ICON_CAPITAL](Quo Mod: 河流上的圣�
 UPDATE LocalizedText SET Text= Text || '[ICON_CAPITAL](Quo Mod: 这单位有 +1[ICON_MOVEMENT] 移动.)' WHERE Tag='LOC_UNIT_KHMER_DOMREY_DESCRIPTION' ;
 
 
+UPDATE LocalizedText SET Text= Text || '[ICON_CAPITAL](Quo Mod: 在城市中提供中世纪基岩, 允许建造中世纪城墙而不满足其他要求.)' WHERE Tag='LOC_BUILDING_PRASAT_DESCRIPTION' ;
+
+
+
+
 -- Indonesia
 --UPDATE LocalizedText SET Text= Text || '[ICON_CAPITAL](Quo Mod: Major [ICON_CULTURE][ICON_SCIENCE][ICON_FAITH][ICON_PRODUCTION] adjacency bonuses for districts next to coral reefs.)' WHERE Tag='LOC_TRAIT_CIVILIZATION_INDONESIA_NUSANTARA_DESCRIPTION' ;
-UPDATE LocalizedText SET Text= Text || '[ICON_CAPITAL](Quo Mod: 当你发现帆船、占星术、天文导航、造船、制图、方帆，或天文时，免费领取[ icon_culture ]文化，基于游戏速度调整.' WHERE Tag='LOC_TRAIT_LEADER_EXALTED_GODDESS_DESCRIPTION' ;
+UPDATE LocalizedText SET Text= Text || '[ICON_CAPITAL](Quo Mod: 当你发现帆船、占星术、天文导航、造船、制图、方帆，或天文时，免费领取[ICON_CULTURE]文化，基于游戏速度调整.' WHERE Tag='LOC_TRAIT_LEADER_EXALTED_GODDESS_DESCRIPTION' ;
 
 
 -- Cree
@@ -208,13 +215,13 @@ UPDATE LocalizedText SET Text= Text || '[ICON_CAPITAL](Quo Mod: 陆上作战单�
 -- Georgia
 UPDATE LocalizedText SET Text= Text || '[ICON_CAPITAL](Quo Mod: +1[ICON_FAITH]信仰+1[ICON_PRODUCTION]生产力 在政府市政广场内3格的地块，包括竞争对手建造的市政广场.)' WHERE Tag='LOC_TRAIT_LEADER_RELIGION_CITY_STATES_DESCRIPTION' ;
 
-UPDATE LocalizedText SET Text= Text || '[ICON_CAPITAL](Quo Mod: 建立没有前提。在城市里免费获得城墙.)' WHERE Tag='LOC_BUILDING_TSIKHE_DESCRIPTION' ;
+UPDATE LocalizedText SET Text= Text || '[ICON_CAPITAL](Quo Mod: 建立没有前提，在城市里免费获得城墙.)' WHERE Tag='LOC_BUILDING_TSIKHE_DESCRIPTION' ;
 
 -- Netherlands
 UPDATE LocalizedText SET Text= Text || '[ICON_CAPITAL](Quo Mod: 所有的地形被认为是有效的圩田地形，而不只是平原.)' WHERE Tag='LOC_IMPROVEMENT_POLDER_DESCRIPTION' ;
 
 -- Scotland
-UPDATE LocalizedText SET Text= Text || '[ICON_CAPITAL](Quo Mod: 当你征服一座城市时，即使城市没有兵营或马厩，也能得到免费的城墙.)' WHERE Tag='LOC_TRAIT_LEADER_BANNOCKBURN_DESCRIPTION' ;
+UPDATE LocalizedText SET Text= Text || '[ICON_CAPITAL](Quo Mod: 当你征服一座城市时得到免费的城墙，即使城市缺乏必要的基础.)' WHERE Tag='LOC_TRAIT_LEADER_BANNOCKBURN_DESCRIPTION' ;
 UPDATE LocalizedText SET Text= '[ICON_CAPITAL](Quo Mod: 欣喜若狂的城市收到+5%[ICON_SCIENCE]科学+5%[ICON_PRODUCTION]生产, 和 +1[ICON_GREATPERSON] 伟人点对科学家和工程师.)' WHERE Tag='LOC_TRAIT_CIVILIZATION_SCOTTISH_ENLIGHTENMENT_DESCRIPTION' ;
 
 
@@ -225,6 +232,13 @@ UPDATE LocalizedText SET Text= Text || '[ICON_CAPITAL](Quo Mod: 任何和你处�
 -- Korea
 UPDATE LocalizedText SET Text= '[ICON_CAPITAL](Quo Mod: 收到 1 免费的主管. -10%[ICON_CULTURE]文化和 [ICON_SCIENCE]科学在没有主管的城市, 改变+10%[ICON_CULTURE] 文化和 [ICON_SCIENCE]科学在有主管的城市.)' WHERE Tag='LOC_TRAIT_LEADER_HWARANG_DESCRIPTION' ;
 UPDATE LocalizedText SET Text= '[ICON_CAPITAL](Quo Mod: 矿山收到 +1[ICON_FAITH] 信仰如果有一个相邻的学院. 农场收到 +1[ICON_FOOD]食物如果有一个相邻的学院.)' WHERE Tag='LOC_TRAIT_CIVILIZATION_THREE_KINGDOMS_DESCRIPTION' ;
+
+
+
+
+-- Nubia
+UPDATE LocalizedText SET Text= Text || '[ICON_CAPITAL](Quo Mod: 远程单位有 +1[ICON_RANGE] 射程. 所有陆地单位受到 -3[ICON_STRENGTH] 战斗力.)' WHERE Tag='LOC_TRAIT_CIVILIZATION_TA_SETI_DESCRIPTION' ;
+
 
 
 

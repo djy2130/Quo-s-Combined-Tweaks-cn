@@ -125,15 +125,17 @@ UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: Provides +1 [
 
 
 -- Spain
-UPDATE LocalizedText SET Text= '[ICON_CAPITAL] (Quo Mod: +4[ICON_GREATPERSON]Points toward Great Prophets for each kill. Units have +4[ICON_STRENGTH]Strength versus opponents of enemy religions, and Siege units have +1[ICON_MOVEMENT] Movement within the borders of enemy religious cities. Inquisitors have +1 charge.)' WHERE Tag='LOC_TRAIT_LEADER_EL_ESCORIAL_DESCRIPTION' ;
+UPDATE LocalizedText SET Text= Text || '[ICON_CAPITAL] (Quo Mod: +4[ICON_GREATPERSON]Points toward Great Prophets for each kill.)' WHERE Tag='LOC_TRAIT_LEADER_EL_ESCORIAL_DESCRIPTION' ;
 
-UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: The Mission no longer destroys Forest or Rainforest. +1 [ICON_SCIENCE] Science of the Science bonus is now front loaded instead of unlocking later.)' WHERE Tag='LOC_IMPROVEMENT_MISSION_DESCRIPTION' ;
+UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: The Mission no longer destroys Forest or Rainforest.)' WHERE Tag='LOC_IMPROVEMENT_MISSION_DESCRIPTION' ;
 
-UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: +7[ICON_GOLD] Gold adjacency bonus for Commercial Hubs next to Natural Wonders.)' WHERE Tag='LOC_TRAIT_CIVILIZATION_TREASURE_FLEET_EXPANSION1_DESCRIPTION' ;
+UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: Natural Wonders provide +7[ICON_GOLD]Gold adjacency bonus to Commercial Hubs. Receive Renaissance Bedrock in cities adjacent a Mission.)' WHERE Tag='LOC_TRAIT_CIVILIZATION_TREASURE_FLEET_EXPANSION1_DESCRIPTION' ;
 
 
 -- France
 UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: +1 [ICON_HOUSING] Housing. Culture Bombs adjacent tiles.)' WHERE Tag='LOC_IMPROVEMENT_CHATEAU_DESCRIPTION' ;
+
+UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: Receive Renaissance Bedrock in cities within 3 tiles of a Chateau, allowing the construction of Renaissance Walls without meeting other prereqs.)' WHERE Tag='LOC_TRAIT_CIVILIZATION_WONDER_TOURISM_DESCRIPTION' ;
 
 UPDATE LocalizedText SET Text= '[ICON_CAPITAL] (Quo Mod: +1 Diplomatic Visibility. Gain permanent visibility of other Civs capitals the turn after they discover Castles. Free Spy at Castles. +100% [ICON_PRODUCTION] Production towards Spies, and new Spies gain a free promotion.)' WHERE Tag='LOC_TRAIT_LEADER_FLYING_SQUADRON_DESCRIPTION' ;
 
@@ -148,7 +150,7 @@ UPDATE LocalizedText SET Text= '[ICON_CAPITAL] (Quo Mod: +1 Diplomatic Visibilit
 UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: Immediately gain 1 free Population in this city.)' WHERE Tag='LOC_DISTRICT_WATER_STREET_CARNIVAL_DESCRIPTION' ;
 UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: Immediately gain 1 free Population in this city.)' WHERE Tag='LOC_DISTRICT_STREET_CARNIVAL_DESCRIPTION' ;
 
-UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: No negative Appeal from owned Rainforest tiles. Can build the Brazilian Revolution project, which provides a huge one-time burst of [ICON_GREATPErson] Great People and unlocks the Brazilwood Camp improvement. Brazilwood Camps provide [ICON_GOLD]Gold for each level of tile Appeal, and Tourism after Flight is discovered.)' WHERE Tag='LOC_TRAIT_CIVILIZATION_AMAZON_DESCRIPTION' ;
+UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: +2 Appeal from Rainforests. Can build the Brazilian Revolution project, which provides a huge one-time burst of [ICON_GREATPErson] Great People and unlocks the Brazilwood Camp improvement. Brazilwood Camps provide [ICON_GOLD]Gold for each level of tile Appeal, and Tourism after Flight is discovered.)' WHERE Tag='LOC_TRAIT_CIVILIZATION_AMAZON_DESCRIPTION' ;
 
 
 
@@ -180,7 +182,7 @@ UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: Serves as a W
 
 
 -- Poland
-UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: Anti-Cavalry have +1[ICON_MOVEMENT]Moves.)' WHERE Tag='LOC_TRAIT_CIVILIZATION_GOLDEN_LIBERTY_DESCRIPTION' ;
+UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: Anti-Cavalry have +2[ICON_MOVEMENT]Moves.)' WHERE Tag='LOC_TRAIT_CIVILIZATION_GOLDEN_LIBERTY_DESCRIPTION' ;
 
 UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: May spend [ICON_FAITH]Faith to purchase buildings for Commercial Hubs.)' WHERE Tag='LOC_TRAIT_LEADER_LITHUANIAN_UNION_DESCRIPTION' ;
 
@@ -191,6 +193,11 @@ UPDATE LocalizedText SET Text= Text || '[ICON_CAPITAL](Quo Mod: +100%[ICON_PRODU
 UPDATE LocalizedText SET Text= Text || '[ICON_CAPITAL](Quo Mod: Major adjacency bonus for Holy Sites on rivers. Units are not slowed by rivers.)' WHERE Tag='LOC_TRAIT_LEADER_MONASTERIES_KING_DESCRIPTION' ;
 
 UPDATE LocalizedText SET Text= Text || '[ICON_CAPITAL](Quo Mod: This unit has +1[ICON_MOVEMENT] Movement.)' WHERE Tag='LOC_UNIT_KHMER_DOMREY_DESCRIPTION' ;
+
+
+UPDATE LocalizedText SET Text= Text || '[ICON_CAPITAL](Quo Mod: Provides Medieval Bedrock in this city, allowing the construction of a Castle without meeting other requirements.)' WHERE Tag='LOC_BUILDING_PRASAT_DESCRIPTION' ;
+
+
 
 
 -- Indonesia
@@ -216,7 +223,7 @@ UPDATE LocalizedText SET Text= Text || '[ICON_CAPITAL](Quo Mod: Can be hard-buil
 UPDATE LocalizedText SET Text= Text || '[ICON_CAPITAL](Quo Mod: All terrain types are considered valid adjacent terrain for polders, not just flat tiles.)' WHERE Tag='LOC_IMPROVEMENT_POLDER_DESCRIPTION' ;
 
 -- Scotland
-UPDATE LocalizedText SET Text= Text || '[ICON_CAPITAL](Quo Mod: Receive free Walls when you conquer a city, even if the city lacks the prerequisite Barracks or Stable.)' WHERE Tag='LOC_TRAIT_LEADER_BANNOCKBURN_DESCRIPTION' ;
+UPDATE LocalizedText SET Text= Text || '[ICON_CAPITAL](Quo Mod: Receive free Walls when you conquer a city, even if the city lacks the prerequisite Bedrock.)' WHERE Tag='LOC_TRAIT_LEADER_BANNOCKBURN_DESCRIPTION' ;
 UPDATE LocalizedText SET Text= '[ICON_CAPITAL](Quo Mod: Happy and Ecstatic cities receive +5%[ICON_SCIENCE] Science +5%[ICON_PRODUCTION] Production, and +1[ICON_GREATPERSON] Great Person point toward Great Scientists and Engineers.)' WHERE Tag='LOC_TRAIT_CIVILIZATION_SCOTTISH_ENLIGHTENMENT_DESCRIPTION' ;
 
 
@@ -227,6 +234,12 @@ UPDATE LocalizedText SET Text= Text || '[ICON_CAPITAL](Quo Mod: Any major civ at
 -- Korea
 UPDATE LocalizedText SET Text= '[ICON_CAPITAL](Quo Mod: Receive 1 free governor. -10%[ICON_CULTURE] Culture and [ICON_SCIENCE]Science in cities without governors, changing to +10%[ICON_CULTURE] Culture and [ICON_SCIENCE]Science in cities with governors.)' WHERE Tag='LOC_TRAIT_LEADER_HWARANG_DESCRIPTION' ;
 UPDATE LocalizedText SET Text= '[ICON_CAPITAL](Quo Mod: Mines receive +1[ICON_FAITH] Faith if there is an adjacent Seowon district. Farms receive +1[ICON_FOOD] Food if there is an adjacent Seowon district.)' WHERE Tag='LOC_TRAIT_CIVILIZATION_THREE_KINGDOMS_DESCRIPTION' ;
+
+
+
+-- Nubia
+UPDATE LocalizedText SET Text= Text || '[ICON_CAPITAL](Quo Mod: Ranged units have +1[ICON_RANGE] Range. All land units suffer -3[ICON_STRENGTH] Combat Strength.)' WHERE Tag='LOC_TRAIT_CIVILIZATION_TA_SETI_DESCRIPTION' ;
+
 
 
 

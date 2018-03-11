@@ -91,10 +91,10 @@ UPDATE LocalizedText SET Text=Text || '  [ICON_CAPITAL](Quo Mod: Provides +2 [IC
 -- Walls
 UPDATE LocalizedText SET Text=Text || '  [ICON_CAPITAL](Quo Mod: Requires Ancient Bedrock in the city in order to be built. Ancient Bedrock is automatically established when you build an Encampment.)' WHERE Tag='LOC_BUILDING_WALLS_DESCRIPTION' AND (select Value from tblquooptions where optionId='QUO_OPTION_WALLS_HAVE_PREREQS') > 0;
 
-UPDATE LocalizedText SET Text=Text || '  [ICON_CAPITAL](Quo Mod: Requires either Ancient Walls or Medieval Bedrock in the city in order to be built. Medieval Bedrock is automatically established if this cities acquires 5 deep water Ocean tiles.)' WHERE Tag='LOC_BUILDING_CASTLE_DESCRIPTION' AND (select Value from tblquooptions where optionId='QUO_OPTION_WALLS_HAVE_PREREQS') > 0;
+UPDATE LocalizedText SET Text=Text || '  [ICON_CAPITAL](Quo Mod: Requires Medieval Bedrock in the city in order to be built. Medieval Bedrock is automatically established if this cities acquires Ancient Walls or a World Wonder.)' WHERE Tag='LOC_BUILDING_CASTLE_DESCRIPTION' AND (select Value from tblquooptions where optionId='QUO_OPTION_WALLS_HAVE_PREREQS') > 0;
 
 
-UPDATE LocalizedText SET Text=Text || '  [ICON_CAPITAL](Quo Mod: Requires either a Castle or Renaissance Bedrock in the city in order to be built. Renaissance Bedrock is automatically established if this cities acquires 5 deep water Ocean tiles.)' WHERE Tag='LOC_BUILDING_STAR_FORT_DESCRIPTION' AND (select Value from tblquooptions where optionId='QUO_OPTION_WALLS_HAVE_PREREQS') > 0;
+UPDATE LocalizedText SET Text=Text || '  [ICON_CAPITAL](Quo Mod: Requires either Renaissance Bedrock in the city in order to be built. Renaissance Bedrock is automatically established if this cities acquires Medieval Walls or 5 deep water Ocean tiles.)' WHERE Tag='LOC_BUILDING_STAR_FORT_DESCRIPTION' AND (select Value from tblquooptions where optionId='QUO_OPTION_WALLS_HAVE_PREREQS') > 0;
 
 
 
@@ -105,8 +105,8 @@ VALUES('en_US', 'Ancient Bedrock', 'LOC_QUO_BUILDING_BEDROCK_ANCIENT_NAME'),
 	('en_US', 'Medieval Bedrock', 'LOC_QUO_BUILDING_BEDROCK_MEDIEVAL_NAME'),
 	('en_US', 'Renaissance Bedrock', 'LOC_QUO_BUILDING_BEDROCK_RENAISSANCE_NAME'),
 	('en_US', 'The bedrock required to build Ancient Walls. This cannot be built outright, but is automatically established in the Capital and any city that acquires an Encampment.', 'LOC_QUO_BUILDING_BEDROCK_ANCIENT_DESCRIPTION'),
-	('en_US', 'The bedrock required to build Castle Walls. This cannot be built outright, but is automatically established in the Capital and any city that acquires Ancient Walls or a World Wonder.', 'LOC_QUO_BUILDING_BEDROCK_MEDIEVAL_DESCRIPTION'),
-	('en_US', 'The bedrock required to build Renaissance Walls. This cannot be built outright, but is automatically established in the Capital and any city that acquires a Castle or 5 deep water Ocean tiles.', 'LOC_QUO_BUILDING_BEDROCK_RENAISSANCE_DESCRIPTION');
+	('en_US', 'The bedrock required to build Medieval Walls. This cannot be built outright, but is automatically established in the Capital and any city that acquires Ancient Walls or a World Wonder.', 'LOC_QUO_BUILDING_BEDROCK_MEDIEVAL_DESCRIPTION'),
+	('en_US', 'The bedrock required to build Renaissance Walls. This cannot be built outright, but is automatically established in the Capital and any city that acquires a Medieval Walls or 5 deep water Ocean tiles.', 'LOC_QUO_BUILDING_BEDROCK_RENAISSANCE_DESCRIPTION');
 
 --
 
@@ -129,7 +129,7 @@ UPDATE LocalizedText SET Text=Text || '  [ICON_CAPITAL](Quo Mod: This building h
 UPDATE LocalizedText SET Text=Text || '  [ICON_CAPITAL](Quo Mod: Also provides +1 [ICON_FOOD] Food to Rainforest tiles in the city in which it is built.)' WHERE Tag='LOC_BUILDING_HANGING_GARDENS_DESCRIPTION';
 
 
-UPDATE LocalizedText SET Text=Text || '  [ICON_CAPITAL](Quo Mod: This Wonder no longer requires an adjacent district.)' WHERE Tag='LOC_BUILDING_GREAT_LIGHTHOUSE_DESCRIPTION' AND (select Value from tblquooptions where optionId='QUO_OPTION_CAN_FREE_PLACE_WONDERS') > 0;
+/* UPDATE LocalizedText SET Text=Text || '  [ICON_CAPITAL](Quo Mod: This Wonder no longer requires an adjacent district.)' WHERE Tag='LOC_BUILDING_GREAT_LIGHTHOUSE_DESCRIPTION' AND (select Value from tblquooptions where optionId='QUO_OPTION_CAN_FREE_PLACE_WONDERS') > 0;
 UPDATE LocalizedText SET Text=Text || '  [ICON_CAPITAL](Quo Mod: This Wonder no longer requires an adjacent district.)' WHERE Tag='LOC_BUILDING_COLOSSUS_DESCRIPTION' AND (select Value from tblquooptions where optionId='QUO_OPTION_CAN_FREE_PLACE_WONDERS') > 0;
 UPDATE LocalizedText SET Text=Text || '  [ICON_CAPITAL](Quo Mod: This Wonder no longer requires an adjacent district.)' WHERE Tag='LOC_BUILDING_COLOSSEUM_DESCRIPTION' AND (select Value from tblquooptions where optionId='QUO_OPTION_CAN_FREE_PLACE_WONDERS') > 0;
 UPDATE LocalizedText SET Text=Text || '  [ICON_CAPITAL](Quo Mod: This Wonder no longer requires an adjacent district.)' WHERE Tag='LOC_BUILDING_GREAT_LIBRARY_DESCRIPTION' AND (select Value from tblquooptions where optionId='QUO_OPTION_CAN_FREE_PLACE_WONDERS') > 0;
@@ -148,7 +148,7 @@ UPDATE LocalizedText SET Text=Text || '  [ICON_CAPITAL](Quo Mod: This Wonder no 
 UPDATE LocalizedText SET Text=Text || '  [ICON_CAPITAL](Quo Mod: This Wonder no longer requires an adjacent district.)' WHERE Tag='LOC_BUILDING_BROADWAY_DESCRIPTION' AND (select Value from tblquooptions where optionId='QUO_OPTION_CAN_FREE_PLACE_WONDERS') > 0;
 UPDATE LocalizedText SET Text=Text || '  [ICON_CAPITAL](Quo Mod: This Wonder no longer requires an adjacent district.)' WHERE Tag='LOC_BUILDING_ESTADIO_DO_MARACANA_DESCRIPTION' AND (select Value from tblquooptions where optionId='QUO_OPTION_CAN_FREE_PLACE_WONDERS') > 0;
 UPDATE LocalizedText SET Text=Text || '  [ICON_CAPITAL](Quo Mod: This Wonder no longer requires an adjacent district.)' WHERE Tag='LOC_BUILDING_SYDNEY_OPERA_HOUSE_DESCRIPTION' AND (select Value from tblquooptions where optionId='QUO_OPTION_CAN_FREE_PLACE_WONDERS') > 0;
-
+ */
 -- wonder era names
 UPDATE LocalizedText SET Text= Text || ' (Ancient)' WHERE Tag='LOC_BUILDING_HANGING_GARDENS_NAME' ;
 UPDATE LocalizedText SET Text= Text || ' (Ancient)' WHERE Tag='LOC_BUILDING_ORACLE_NAME' ;
