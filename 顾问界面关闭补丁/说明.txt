@@ -1,0 +1,3 @@
+是的，顾问界面被原作者强行打开，而且还tm关不了
+
+复制这个文件夹内的TutorialScenarioBase.lua到Tutorial文件夹覆盖原文件即可关闭
