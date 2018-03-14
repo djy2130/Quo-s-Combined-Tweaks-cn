@@ -94,11 +94,22 @@ UPDATE tblQuoOptions
 -- ROCKETBOOTS
 -- Change the Value below to the number of extra Base Move points units receive. This value will apply to all units with a Base Move of at least 2, except for Siege units. A value
 -- of 0 means no change. Recommended value: 1.
-/*火箭靴，所有单位除了攻城车速度势，推荐打开
+/*火箭靴，所有单位（除了攻城车）移动力+1，推荐打开
 */
 UPDATE tblQuoOptions
    SET Value = 1
  WHERE OptionID = 'QUO_OPTION_ROCKETBOOTS' ;
+ 
+
+  -- =================
+-- FARSIGHT
+-- Change the Value below to the number of extra Sight range units receive. This setting may help the AI by giving longer sight range to targets. 
+-- A value of 0 indicates no extra sight. 
+/*AI获得额外的+1视野以适应火箭靴的调整。推荐和火箭靴一起打开
+*/
+UPDATE tblQuoOptions
+   SET Value = 1
+ WHERE OptionID = 'QUO_OPTION_EXTRA_SIGHT' ; 
  
 
  -- =================
@@ -123,13 +134,28 @@ UPDATE tblQuoOptions
 
 
 -- =================
--- QUO_OPTION_ARE_ANTI_CAV_RANGED
--- Change the Value below to indicate whether Anti-Calvary units should use Ranged rules. If this is Enabled, Anti Calvary receive Range 1, and cannot capture cities.
-/*反骑兵单位是1格的远程单位，推荐打开
+-- RANGED ANTI-CAVALRY RULES
+
+-- Change the Value below to indicate whether Anti-Calvary units should use Ranged rules. If this is Enabled, Anti Calvary receive a Range 1 attack
+-- equal to their Combat strength.
+-- 1 = Enabled, 0 = Disable. Recommend setting: 1
+/*将反骑兵单位变为射程只有1的远程单位，推荐打开
 */
 UPDATE tblQuoOptions
    SET Value = 1
  WHERE OptionID = 'QUO_OPTION_ARE_ANTI_CAV_RANGED' ; 
+ 
+ 
+ -- =================
+-- RANGED SHIP RULES
+-- Change the Value below to indicate whether Melee ships should use Ranged rules. If this is Enabled, Melee Ships receive a Range 1 attack that is 70% of Combat Strength.
+-- Ranged ships with a Range of 1 receive +1 Range.
+-- 1 = Enabled, 0 = Disable. Recommend setting: 1
+/*近战海军单位变为射程只有1的远程单位，远程海军单位如果射程只有1将增加到2，推荐打开
+*/
+UPDATE tblQuoOptions
+   SET Value = 1
+ WHERE OptionID = 'QUO_OPTION_ARE_MELEE_SHIPS_RANGED' ; 
  
  
 
@@ -151,8 +177,8 @@ UPDATE tblQuoOptions
 -- MIN DISTANCE TO BARBARIAN CAMPS 
 /* Change the value below to adjust the minimum distance in tiles that a Barbarian camp can appear. Note that the game engine 
 reduces this distance based on game difficulty. Unmodded value is 4. Recommended value is 6. */
-/*野蛮人营地到市中心的最小距离，这个mod推荐甿
-但是我推荐用原版皿
+/*野蛮人营地到市中心的最小距离，这个mod推荐用6
+但是我推荐用原版的4
 */
 UPDATE tblQuoOptions
    SET Value = 4
@@ -163,7 +189,7 @@ UPDATE tblQuoOptions
  -- ================
 -- BARBARIAN XP SOFTCAP
 /* Set the Value to the max level you can obtain from fighting Barbarians. Vanilla value is 1. Recommended value is 2. */
-/*打野蛮人能获得的等级上限，原版游戏是1，这个mod推荐甿
+/*打野蛮人能获得的等级上限，原版游戏是1，这个mod推荐2
 但是我推荐用5
 */
 UPDATE tblQuoOptions
@@ -176,7 +202,7 @@ UPDATE tblQuoOptions
 -- REBELLION CHANCE PER POINT OF UNHAPPINESS
 /* Set the percent change per point of Happiness of a rebellion happening each turn. Default value is 2. Recommended value is 0.2. 
 A higher number means a higher chance of rebellion per turn. */
-/*每一回合不快乐城市产生叛变的几率，推荐用0.2
+/*每一回合不快乐城市产生叛变的几率，推荐用原版的2
 */
 UPDATE tblQuoOptions
    SET Value = 0.2
@@ -212,8 +238,8 @@ UPDATE tblQuoOptions
 /* Set Value to the duration that diplomatic actions, such as denouncements, friend pacts, defense pacts, etc should last.
 This setting does not affect the duration of trade agreements or open borders, and does not take game speed into account.
 The unmodded value is 30. Recommended value for standard speed as of the Rise and Fall expansion is 40. */
-/*外交回合时间，比如宣布友好之后要迿0回合才能结束这个状怿
-原版的值是30，这mod推荐甿0
+/*外交回合时间，比如宣布友好之后要用30回合才能结束这个状怿
+原版的值是30，这mod推荐用40
 */
 UPDATE tblQuoOptions
    SET Value = 40
@@ -236,8 +262,8 @@ UPDATE tblQuoOptions
 -- RADIAL BUILDING PRODUCTION INCREASE
 /* Set Value equal to the Multiplier applied to buildings with a radial Production effect, like Factories. The recommended value is 2. The unmodded game value is 1.
 Setting to zero will eliminate Production from these buildings altogether. */
-/*工厂和其它有范围的建筑的范围乘法器，比如工厂范围昿，使用了2倍之后就变成12栿..
-原版的值是1，这mod推荐甿，我推荐用原版的1
+/*工厂和其它有范围建筑的范围乘法器，比如工厂范围是6，使用了2倍之后就变成12格.
+原版的值是1，这mod推荐用2，我推荐用原版的1
 */
 UPDATE tblQuoOptions
    SET Value = 1
@@ -248,8 +274,8 @@ UPDATE tblQuoOptions
 -- STRATEGIC_RESOURCE_MINIMUM_FOR_PRODUCTION_ANYWHERE
 /* Set Value equal to the minimum number of copies of a strategic resource needed to build or purchase a unit in a city without an Encampment. The recommended value is 1. The 
 unmodded game value is 2. */
-/*建立或购买单位时在没有军营的战略资源的最小倿
-这mod推荐甿，我推荐用原版的2，让战略资源更有意义
+/*建立或购买单位时在没有军营的战略资源的最小值
+这mod推荐用1，我推荐用原版的2，让战略资源更有意义
 */
 UPDATE tblQuoOptions
    SET Value = 2
@@ -268,6 +294,32 @@ UPDATE tblQuoOptions
  
 
 
+   -- ================
+-- THRESHOLD_SHIFT_PER_PAST_GOLDEN_AGE
+/* Set Value to the increase in difficulty of scoring a Golden Age after scoring a previous Golden Age. Higher numbers indicate increased difficulty.
+The unmodded value is 5. Recommended value: 12. Do not set a negative number.*/
+/*在黄金时代之后，再次进入黄金时代所需的得分难度。数字越高，难度越大。
+没改过的值是5。推荐值是12。不要设置负数。
+*/
+UPDATE tblQuoOptions
+   SET Value = 12
+ WHERE OptionID = 'QUO_OPTION_THRESHOLD_SHIFT_PER_PAST_GOLDEN_AGE' ;
+ 
+ 
+ 
+  -- ================
+-- GOLDEN_AGE_SCORE_BASE_THRESHOLD
+/* Set Value to the base number of era score points required to score a Golden Age. Higher numbers indicate more era score points needed. The unmodded value is 24. 
+Recommended value: 36. */
+/*将分数设置为进入黄金时代所需分数的基数。更高的数字表示进入黄金时代所需的分数更多。
+没改过的值是24。推荐值是36
+*/
+UPDATE tblQuoOptions
+   SET Value = 36
+ WHERE OptionID = 'QUO_OPTION_GOLDEN_AGE_SCORE_BASE_THRESHOLD' ;
+
+ 
+ 
  -- ================
 -- ENABLE BONUSES FOR MOD CIVS
 /* Set Value to enable or disable modded civs automatically receiving a Friendship bonus of: Provides +1 Trade route to friends. Civs without
@@ -290,7 +342,7 @@ UPDATE tblQuoOptions
 -- The default value for this mod is 0.7, which lowers boost the amount by about 30%
 -- A value of zero will eliminate boosts entirely. A value of 1 will use the unmodded Vanilla value.
 /*尤里卡减慢的速度，这mod默认值是0.7
-我推荐用原版皿，让尤里卡更有意乿
+我推荐用原版的1，让尤里卡更有意乿
 */
 UPDATE tblQuoOptions
    SET Value = 1
