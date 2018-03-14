@@ -97,11 +97,11 @@ UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: 帮助希腊�
 
 --UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: This building is half normal cost.)' WHERE Tag='LOC_BUILDING_STAVE_CHURCH_DESCRIPTION' ;
 
-UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: 当你在海岸上征服或征服一个城市时，获得一个自由的海军近战单位。当你宣布战争时，船只无视封闭的国境.)' WHERE Tag='LOC_TRAIT_LEADER_THUNDERBOLT_DESCRIPTION' ;
+UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: 当你在海岸上建立城市时，获得一个免费的海军近战单位。当你宣布战争时，船只无视封闭的国境.)' WHERE Tag='LOC_TRAIT_LEADER_THUNDERBOLT_DESCRIPTION' ;
 
 UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: 没有技术前提.)' WHERE Tag='LOC_UNIT_NORWEGIAN_LONGSHIP_DESCRIPTION' ;
 
-UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: 这个单位可以同一个回合移动和攻击.)' WHERE Tag='LOC_UNIT_NORWEGIAN_BERSERKER_DESCRIPTION' ;
+UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: 这个单位可以同一回合移动和攻击.)' WHERE Tag='LOC_UNIT_NORWEGIAN_BERSERKER_DESCRIPTION' ;
 
 
 
@@ -146,8 +146,8 @@ UPDATE LocalizedText SET Text= '[ICON_CAPITAL] (Quo Mod: +1 外交能见度. 解
 
 -- Brazil
 
-UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: 立即获得1自由人口在这个城市.)' WHERE Tag='LOC_DISTRICT_WATER_STREET_CARNIVAL_DESCRIPTION' ;
-UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: 立即获得1自由人口在这个城市.)' WHERE Tag='LOC_DISTRICT_STREET_CARNIVAL_DESCRIPTION' ;
+UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: 立即在这个城市获得1免费人口.)' WHERE Tag='LOC_DISTRICT_WATER_STREET_CARNIVAL_DESCRIPTION' ;
+UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: 立即在这个城市获得1免费人口.)' WHERE Tag='LOC_DISTRICT_STREET_CARNIVAL_DESCRIPTION' ;
 
 UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: +2 魅力从雨林. 能建设巴西革命项目, 这提供一次性的巨大 [ICON_GREATPErson] 伟人点和解锁巴西木营改良. 巴西木营提供 [ICON_GOLD] 金对于每级的魅力, 以及在飞行解锁后增加旅游业.)' WHERE Tag='LOC_TRAIT_CIVILIZATION_AMAZON_DESCRIPTION' ;
 

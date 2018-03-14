@@ -53,7 +53,7 @@
 
 	<LocalizedText>
 		<Row Tag="LOC_QUO_ABI_PIKEMAN_BARBARIAN_WEAK_PREVIEW" Language="en_US">
-			<Text>-10[ICON_STRENGTH] for Barbarian Spearmen</Text>
+			<Text>-4[ICON_STRENGTH] for Barbarian Spearmen</Text>
 		</Row>
 	</LocalizedText>
 

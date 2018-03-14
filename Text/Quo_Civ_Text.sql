@@ -98,7 +98,7 @@ UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: Players who b
 
 --UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: This building is half normal cost.)' WHERE Tag='LOC_BUILDING_STAVE_CHURCH_DESCRIPTION' ;
 
-UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: Receive a free naval melee unit when you settle or conquer a city on the coast. Ships are not deterred by closed borders or evicted when you declare war.)' WHERE Tag='LOC_TRAIT_LEADER_THUNDERBOLT_DESCRIPTION' ;
+UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: Receive a free naval melee unit when you settle a city on the coast. Ships are not deterred by closed borders or evicted when you declare war.)' WHERE Tag='LOC_TRAIT_LEADER_THUNDERBOLT_DESCRIPTION' ;
 
 UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: Has no tech prereqs.)' WHERE Tag='LOC_UNIT_NORWEGIAN_LONGSHIP_DESCRIPTION' ;
 
