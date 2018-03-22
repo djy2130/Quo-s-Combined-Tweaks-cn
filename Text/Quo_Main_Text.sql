@@ -193,7 +193,7 @@ UPDATE LocalizedText SET Text= Text || ' (Medieval)' WHERE Tag='LOC_BUILDING_HAL
 
 UPDATE LocalizedText SET Text='[ICON_CAPITAL](Quo Mod: +1[ICON_PRODUCTION] Production from Fishing Boats. +20%[ICON_PRODUCTION] Production toward Harbors.)' WHERE Tag='LOC_BELIEF_GOD_OF_THE_SEA_DESCRIPTION' ;
 
-UPDATE LocalizedText SET Text='[ICON_CAPITAL](Quo Mod: +1[ICON_CULTURE] Culture from Pastures. Recon units ignore closed borders.)' WHERE Tag='LOC_BELIEF_GOD_OF_THE_OPEN_SKY_DESCRIPTION' ;
+UPDATE LocalizedText SET Text='[ICON_CAPITAL](Quo Mod: +1[ICON_CULTURE] Culture from Pastures. Siege units receive +25% experience.)' WHERE Tag='LOC_BELIEF_GOD_OF_THE_OPEN_SKY_DESCRIPTION' ;
 
 UPDATE LocalizedText SET Text='[ICON_CAPITAL](Quo Mod: +1[ICON_CULTURE] Culture from all Plantations and immediately obtain 3 extra tiles when you found a city.)' WHERE Tag='LOC_BELIEF_ORAL_TRADITION_DESCRIPTION' ;
 
@@ -203,21 +203,29 @@ UPDATE LocalizedText SET Text='[ICON_CAPITAL](Quo Mod: +2[ICON_PRODUCTION] from 
 
 UPDATE LocalizedText SET Text='[ICON_CAPITAL](Quo Mod: +1[ICON_FOOD] Food from camps and +25% Experience for Ranged units of any era.)' WHERE Tag='LOC_BELIEF_GODDESS_OF_THE_HUNT_DESCRIPTION' ;
 
-UPDATE LocalizedText SET Text='[ICON_CAPITAL](Quo Mod: +2[ICON_Faith] Faith from Quarries. +200%[ICON_PRODUCTION] Production toward Stonehenge.)' WHERE Tag='LOC_BELIEF_STONE_CIRCLES_DESCRIPTION' ;
+UPDATE LocalizedText SET Text='[ICON_CAPITAL](Quo Mod: +2[ICON_Faith] Faith from Quarries. Receive Ancient Bedrock in all cities without requiring an Encampment.)' WHERE Tag='LOC_BELIEF_STONE_CIRCLES_DESCRIPTION' ;
 
 UPDATE LocalizedText SET Text='[ICON_CAPITAL](Quo Mod: Border expansion rate is 150% higher. +1[ICON_TRADEROUTE] max Trade Route capacity.)' WHERE Tag='LOC_BELIEF_RELIGIOUS_SETTLEMENTS_DESCRIPTION' ;
 
-UPDATE LocalizedText SET Text='[ICON_CAPITAL](Quo Mod: +30% [ICON_PRODUCTION] Production toward Ancient and Classical Wonders.)' WHERE Tag='LOC_BELIEF_MONUMENT_TO_THE_GODS_DESCRIPTION' ;
+UPDATE LocalizedText SET Text='[ICON_CAPITAL](Quo Mod: +15%[ICON_PRODUCTION] Production toward Ancient and Classical Wonders, and immediately receive a free relic.)' WHERE Tag='LOC_BELIEF_MONUMENT_TO_THE_GODS_DESCRIPTION' ;
 
 UPDATE LocalizedText SET Text='[ICON_CAPITAL](Quo Mod: +1[ICON_AMENITIES] Amenity to Holy Sites on rivers. Minor adjacency bonus for Holy Sites on rivers.)' WHERE Tag='LOC_BELIEF_RIVER_GODDESS_DESCRIPTION' ;
 
-UPDATE LocalizedText SET Text='[ICON_CAPITAL](Quo Mod: +1[ICON_FAITH] from Mines over Luxury and Bonus resources, and immediately receive 400[ICON_GOLD] Gold, adjusted for game speed.)' WHERE Tag='LOC_BELIEF_RELIGIOUS_IDOLS_DESCRIPTION' ;
+UPDATE LocalizedText SET Text='[ICON_CAPITAL](Quo Mod: +1[ICON_FAITH] from Mines over Luxury and Bonus resources. Immediately receive 400[ICON_GOLD] Gold, adjusted for game speed.)' WHERE Tag='LOC_BELIEF_RELIGIOUS_IDOLS_DESCRIPTION' ;
 
 UPDATE LocalizedText SET Text='[ICON_CAPITAL](Quo Mod: City growth rate of all cities is +10% higher. +4[ICON_FOOD] Food in the capital.)' WHERE Tag='LOC_BELIEF_FERTILITY_RITES_DESCRIPTION' ;
 
 UPDATE LocalizedText SET Text='[ICON_CAPITAL](Quo Mod: +1[ICON_PRODUCTION] Production from Oases, Flood Plains, Marshes, Rice, and Wheat.)' WHERE Tag='LOC_BELIEF_LADY_OF_THE_REEDS_AND_MARSHES_DESCRIPTION' ;
 
 UPDATE LocalizedText SET Text='[ICON_CAPITAL](Quo Mod: +1[ICON_FAITH] Faith on tiles with Breathtaking appeal.)' WHERE Tag='LOC_BELIEF_EARTH_GODDESS_DESCRIPTION' ;
+
+UPDATE LocalizedText SET Text='[ICON_CAPITAL](Quo Mod: Holy Site districts get +1[ICON_FAITH] Faith from adjacent Forest and Rainforest.)' WHERE Tag='LOC_BELIEF_SACRED_PATH_DESCRIPTION' ;
+
+
+
+-- religion
+--UPDATE LocalizedText SET Text= Text || '[ICON_CAPITAL](Quo Mod: +2[ICON_FAITH] Faith from Lake tiles.)' WHERE Tag='LOC_BELIEF_RELIGIOUS_COMMUNITY_DESCRIPTION' ;
+
 
 
 -- Governments
@@ -240,6 +248,8 @@ UPDATE LocalizedText SET Text='+2[ICON_PRODUCTION], +1[ICON_HOUSING] per distric
  
 -- Governors
 UPDATE LocalizedText SET Text= Text || '[ICON_CAPITAL](Quo Mod: This governor exerts double normal loyalty pressure.)' WHERE Tag='LOC_GOVERNOR_PROMOTION_REDOUBT_DESCRIPTION' ;
+
+UPDATE LocalizedText SET Text= '[ICON_CAPITAL](Quo Mod: +30% yields from plot harvests and feature removals in this city.)' WHERE Tag='LOC_GOVERNOR_PROMOTION_RESOURCE_MANAGER_GROUNDBREAKER_DESCRIPTION' ;
  
  
 

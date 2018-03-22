@@ -35,6 +35,18 @@
 			<Text>+10 against infantry</Text>
 		</Row>
 	</LocalizedText>
+	
+	<LocalizedText>
+		<Row Tag="QUO_LOC_KURGAN_ADJ" Language="en_US">
+			<Text>+2 per adjacent Kurgan</Text>
+		</Row>
+	</LocalizedText>	
+	<LocalizedText>
+		<Row Tag="LOC_RESOURCE_QUO_SCYTHIAN_MYSTERIUM_NAME" Language="en_US">
+			<Text>Mysterium</Text>
+		</Row>
+	</LocalizedText>
+	
 	<LocalizedText>
 		<Row Tag="QUO_LOC_ZIG_ADJ" Language="en_US">
 			<Text>+1 per adjacent Ziggurat</Text>
