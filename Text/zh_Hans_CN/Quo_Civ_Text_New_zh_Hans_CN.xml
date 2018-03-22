@@ -9,7 +9,7 @@
 	</LocalizedText>
 		<LocalizedText>
 		<Row Tag="LOC_QUO_UNIT_INDONESIA_WARRIOR_MONK_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>高棉的独特单位。通过水渠解锁. 你的每个水渠得到 +2 [ICON_STRENGTH] 战力.</Text>
+			<Text>高棉的独特单位。通过水渠解锁。你的每个水渠得到 +2 [ICON_STRENGTH] 战力.</Text>
 		</Row>
 	</LocalizedText>
 
@@ -35,6 +35,18 @@
 			<Text>+10 对步兵</Text>
 		</Row>
 	</LocalizedText>
+	
+	<LocalizedText>
+		<Row Tag="QUO_LOC_KURGAN_ADJ" Language="zh_Hans_CN">
+			<Text>+2 每相邻的坟头</Text>
+		</Row>
+	</LocalizedText>
+	<LocalizedText>
+		<Row Tag="LOC_RESOURCE_QUO_SCYTHIAN_MYSTERIUM_NAME" Language="zh_Hans_CN">
+			<Text>神秘</Text>
+		</Row>
+	</LocalizedText>
+	
 	<LocalizedText>
 		<Row Tag="QUO_LOC_ZIG_ADJ" Language="zh_Hans_CN">
 			<Text>+1 每相邻的金字形神塔</Text>
@@ -67,7 +79,7 @@
 	</LocalizedText>
 	<LocalizedText>
 		<Row Tag="QUO_LOC_EXTRA_VISION" Language="zh_Hans_CN">
-			<Text>+1 视力</Text>
+			<Text>+1 视野</Text>
 		</Row>
 	</LocalizedText>
 	<LocalizedText>

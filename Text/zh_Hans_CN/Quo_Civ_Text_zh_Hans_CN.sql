@@ -12,14 +12,14 @@ VALUES ('Quo_Civ_Text',	'1',	'0',		'') ;
 
 -- Germany
 
-UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: 从第三个区域开始，城市得到 +1 [ICON_PRODUCTION] 生产力从每个区域. +2[ICON_MOVEMENT] 移动力对重装骑兵 当时代达到现代.)' WHERE Tag='LOC_TRAIT_CIVILIZATION_IMPERIAL_FREE_CITIES_DESCRIPTION' ;
+UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: 从第三个区域开始，城市从每个区域得到 +1 [ICON_PRODUCTION] 生产力. 当时代达到现代时重装骑兵+2[ICON_MOVEMENT] 移动力 .)' WHERE Tag='LOC_TRAIT_CIVILIZATION_IMPERIAL_FREE_CITIES_DESCRIPTION' ;
 
-UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: 每当你占领一座城市, 将获得相当于你当前回合金的3倍的 [ICON_GOLD]金.)' WHERE Tag='LOC_TRAIT_LEADER_HOLY_ROMAN_EMPEROR_DESCRIPTION' ;
+--UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: 每当你占领一座城市, 将获得相当于你当前回合金的3倍的 [ICON_GOLD]金.)' WHERE Tag='LOC_TRAIT_LEADER_HOLY_ROMAN_EMPEROR_DESCRIPTION' ;
 
 
 
 -- England
-UPDATE LocalizedText SET Text= '[ICON_CAPITAL] (Quo Mod: 皇家海军船坞不再代替海港，但作为它的补充。它收到 +2 [ICON_HOUSING] 和 [ICON_GOLD] 金 邻近奖励类似港口。它不受城市人口的限制。在海军传统公民解锁.)' WHERE Tag='LOC_DISTRICT_ROYAL_NAVY_DOCKYARD_DESCRIPTION' ;
+UPDATE LocalizedText SET Text= Text || '[ICON_CAPITAL] (Quo Mod: 提供 +1[ICON_TradeRoute] 商路当你在不是你起始大陆的城市建立皇家海军船坞.)' WHERE Tag='LOC_DISTRICT_ROYAL_NAVY_DOCKYARD_EXPANSION1_DESCRIPTION' ;
 
 UPDATE LocalizedText SET Text= '[ICON_CAPITAL] (Quo Mod: 当你在海岸或其他大陆的某个地方定居时，获得一个免费的近战单位.)' WHERE Tag='LOC_TRAIT_LEADER_PAX_BRITANNICA_DESCRIPTION' ;
 
@@ -39,7 +39,7 @@ UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: +2 免费 [IC
 
 UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: 这些建筑是正常造价的一半.)' WHERE Tag='LOC_BUILDING_ELECTRONICS_FACTORY_DESCRIPTION' ;
 
-UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: +1[ICON_GREATPERSON] 大将军点在每个营地，圣地，或剧院区.)' WHERE Tag='LOC_TRAIT_LEADER_DIVINE_WIND_DESCRIPTION' ;
+UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: +1[ICON_GREATPERSON] 大将军点在每个军营，圣地，或剧院区.)' WHERE Tag='LOC_TRAIT_LEADER_DIVINE_WIND_DESCRIPTION' ;
 
 UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: 武士不能被看见除非相邻有敌方单位.)' WHERE Tag='LOC_UNIT_JAPANESE_SAMURAI_DESCRIPTION' ;
 
@@ -49,7 +49,7 @@ UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: 工人可以�
 
 
 -- Arabia
-UPDATE LocalizedText SET Text= ' [ICON_CAPITAL] (Quo Mod: 自动收到最后的先知. +1[ICON_SCIENCE]科学 +3[ICON_GOLD]金 每个跟随你宗教的外国城市.)' WHERE Tag='LOC_TRAIT_CIVILIZATION_LAST_PROPHET_DESCRIPTION' ;
+UPDATE LocalizedText SET Text= ' [ICON_CAPITAL] (Quo Mod: 自动收到最后的先知. +1[ICON_SCIENCE]科学 +3[ICON_GOLD]金 在每个跟随你宗教的外国城市.)' WHERE Tag='LOC_TRAIT_CIVILIZATION_LAST_PROPHET_DESCRIPTION' ;
 
 UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: 不能建商业中心. 收到 [ICON_TRADEROUTE] 商路从学院和圣地 而不是市场和灯塔. +5 [ICON_GOLD] 金在既有学院又有圣地的城市.)' WHERE Tag='LOC_TRAIT_LEADER_RIGHTEOUSNESS_OF_FAITH_DESCRIPTION' ;
 
@@ -58,7 +58,7 @@ UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: 不能建商�
 
 
 -- Sumeria
-UPDATE LocalizedText SET Text= '[ICON_CAPITAL] (Quo Mod: +2[ICON_SCIENCE] 科学 +1[ICON_CULTURE] 文化. +2[ICON_PRODUCTION] 生产对毗邻工业区. +1[ICON_SCIENCE]科学对相邻的没有河流的地块. 必须建在河边平坦的土地上。金字形神塔不能互相相邻.)' WHERE Tag='LOC_IMPROVEMENT_ZIGGURAT_DESCRIPTION' ;
+UPDATE LocalizedText SET Text= '[ICON_CAPITAL] (Quo Mod: +2[ICON_SCIENCE] 科学 +1[ICON_CULTURE] 文化. +2[ICON_PRODUCTION] 生产对毗邻工业区. +1[ICON_SCIENCE]科学对相邻的没有河流的地块. 必须建在河边的平地上。金字形神塔不能互相相邻.)' WHERE Tag='LOC_IMPROVEMENT_ZIGGURAT_DESCRIPTION' ;
 
 UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: +10 [ICON_STRENGTH] 战斗力对野蛮人.)' WHERE Tag='LOC_TRAIT_CIVILIZATION_FIRST_CIVILIZATION_DESCRIPTION' ;
 
@@ -71,7 +71,7 @@ UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: 收到 20[ICO
 -- China
 UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: 任何一个区域每邻接两个长城，则+1各自的 [ICON_FAITH][ICON_PRODUCTION][ICON_CULTURE][ICON_GOLD][ICON_SCIENCE] .)' WHERE Tag='LOC_IMPROVEMENT_GREAT_WALL_DESCRIPTION' ;
 
-UPDATE LocalizedText SET Text= '  [ICON_CAPITAL] (Quo Mod: [ICON_TechBoosted] 科技和 [ICON_CivicBoosted] 公民尤里卡增强 10%. 开始时有 25[ICON_SCIENCE] 科学, 基于游戏速度调整. 在城市的4格内的长城收到古城墙基岩，建立古城墙时不需要军营区.)' WHERE Tag='LOC_TRAIT_CIVILIZATION_DYNASTIC_CYCLE_EXPANSION1_DESCRIPTION' ;
+UPDATE LocalizedText SET Text= '  [ICON_CAPITAL] (Quo Mod: [ICON_TechBoosted] 科技和 [ICON_CivicBoosted] 公民尤里卡增强 10%. 在城市的4格内的长城收到古城墙基岩，建立古城墙时不需要军营区.)' WHERE Tag='LOC_TRAIT_CIVILIZATION_DYNASTIC_CYCLE_EXPANSION1_DESCRIPTION' ;
 
 
 -- Greece
@@ -97,7 +97,7 @@ UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: 帮助希腊�
 
 --UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: This building is half normal cost.)' WHERE Tag='LOC_BUILDING_STAVE_CHURCH_DESCRIPTION' ;
 
-UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: 当你在海岸上建立城市时，获得一个免费的海军近战单位。当你宣布战争时，船只无视封闭的国境.)' WHERE Tag='LOC_TRAIT_LEADER_THUNDERBOLT_DESCRIPTION' ;
+UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: 当你在海岸上建立城市时，获得一个免费的海军近战单位.)' WHERE Tag='LOC_TRAIT_LEADER_THUNDERBOLT_DESCRIPTION' ;
 
 UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: 没有技术前提.)' WHERE Tag='LOC_UNIT_NORWEGIAN_LONGSHIP_DESCRIPTION' ;
 
@@ -117,9 +117,9 @@ UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: +5 [ICON_STRE
 
 UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: 在中世纪集镇, 解锁+4[ICON_GreatWork_Relic] 遗物槽在首都. 在人文主义, 解锁 1 [ICON_GreatWork_Relic] 遗物在每一座具有远古或古典奇观的城市.)' WHERE Tag='LOC_TRAIT_LEADER_MEDITERRANEAN_EXPANSION1_DESCRIPTION' ;
 
-UPDATE LocalizedText SET Text= '[ICON_CAPITAL] (Quo Mod: 至少有1个奇迹的城市收到+20% [ICON_PRODUCTION] 生产力对区域和奇观. 洪泛区可以建设区域和奇迹.)' WHERE Tag='LOC_TRAIT_CIVILIZATION_ITERU_DESCRIPTION' ;
+UPDATE LocalizedText SET Text= '[ICON_CAPITAL] (Quo Mod: 有1个奇观的城市收到+20% [ICON_PRODUCTION] 生产力对区域和奇观. 洪泛区可以建设区域和奇观.)' WHERE Tag='LOC_TRAIT_CIVILIZATION_ITERU_DESCRIPTION' ;
 
-UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: 提供+1[ICON_FAITH]信仰+1[ICON_CULTURE]文化 对周围没有平原的沙漠地块.)' WHERE Tag='LOC_IMPROVEMENT_SPHINX_DESCRIPTION' ; 
+UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: +1[ICON_FAITH]信仰+1[ICON_CULTURE]文化 对相邻的沙漠地块，而不是洪泛区.)' WHERE Tag='LOC_IMPROVEMENT_SPHINX_DESCRIPTION' ; 
 
 
 
@@ -136,7 +136,7 @@ UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: +1 [ICON_HOUS
 
 UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: 收到文艺复兴的基岩当城市的3格内修建了堡垒改良设施，可以凭此修建文艺复兴城墙.)' WHERE Tag='LOC_TRAIT_CIVILIZATION_WONDER_TOURISM_DESCRIPTION' ;
 
-UPDATE LocalizedText SET Text= '[ICON_CAPITAL] (Quo Mod: +1 外交能见度. 解锁城堡之后获得其他文明的永久能见度. 城堡得到免费间谍. +100% [ICON_PRODUCTION] 生产力对间谍, 间谍获得一个免费升级.)' WHERE Tag='LOC_TRAIT_LEADER_FLYING_SQUADRON_DESCRIPTION' ;
+UPDATE LocalizedText SET Text= '[ICON_CAPITAL] (Quo Mod: +1 外交能见度. 解锁城堡之后获得其他文明的永久能见度. 城堡得到免费间谍. 间谍获得一个免费升级.)' WHERE Tag='LOC_TRAIT_LEADER_FLYING_SQUADRON_DESCRIPTION' ;
 
 -- UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: Catherines extra spy is available at Astrology instead of Castles.)' WHERE Tag='LOC_TECH_CASTLES_DESCRIPTION' ;
 
@@ -146,10 +146,11 @@ UPDATE LocalizedText SET Text= '[ICON_CAPITAL] (Quo Mod: +1 外交能见度. 解
 
 -- Brazil
 
-UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: 立即在这个城市获得1免费人口.)' WHERE Tag='LOC_DISTRICT_WATER_STREET_CARNIVAL_DESCRIPTION' ;
-UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: 立即在这个城市获得1免费人口.)' WHERE Tag='LOC_DISTRICT_STREET_CARNIVAL_DESCRIPTION' ;
+UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: 立即在这个城市获得1免费人口.在狂欢节或科帕卡瓦纳6格内的其他文明城市每回合失去3忠诚度)' WHERE Tag='LOC_DISTRICT_WATER_STREET_CARNIVAL_DESCRIPTION' ;
+UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: 立即在这个城市获得1免费人口.在狂欢节或科帕卡瓦纳6格内的其他文明城市每回合失去3忠诚度)' WHERE Tag='LOC_DISTRICT_STREET_CARNIVAL_DESCRIPTION' ;
 
 UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: +2 魅力从雨林. 能建设巴西革命项目, 这提供一次性的巨大 [ICON_GREATPErson] 伟人点和解锁巴西木营改良. 巴西木营提供 [ICON_GOLD] 金对于每级的魅力, 以及在飞行解锁后增加旅游业.)' WHERE Tag='LOC_TRAIT_CIVILIZATION_AMAZON_DESCRIPTION' ;
+
 
 
 
@@ -157,8 +158,10 @@ UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: +2 魅力从�
 -- Scythia
 --UPDATE LocalizedText SET Text='  [ICON_CAPITAL] (Quo Mod: Units receive +5 [ICON_STRENGTH] Strength when fighting wounded units. +25 HP when they score a kill.)' WHERE Tag='LOC_TRAIT_LEADER_KILLER_OF_CYRUS_DESCRIPTION' ;
 
-UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: 可以在自己的领地之外建造。提供堡垒，提供防御.)' WHERE Tag='LOC_IMPROVEMENT_KURGAN_DESCRIPTION' ;
+UPDATE LocalizedText SET Text= '[ICON_CAPITAL] (Quo Mod: 只能建在神秘资源上. 提供 +1[ICON_HOUSING]住房, +1[ICON_AMENITIES]魅力, 和 [ICON_FAITH]基于地块魅力值的信仰. +2[ICON_PRODUCTION]生产对相邻的军营区.)' WHERE Tag='LOC_IMPROVEMENT_KURGAN_DESCRIPTION' ;
 
+
+UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: 能在地图上看见"神秘"资源 , 这些独特的资源只有少数人古代文明知道. )' WHERE Tag='LOC_TRAIT_CIVILIZATION_EXTRA_LIGHT_CAVALRY_DESCRIPTION' ;
 
 
 -- India
@@ -172,10 +175,10 @@ UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: 收到免费�
 
 
 -- AZTEC
-UPDATE LocalizedText SET Text= Text || '[NEWLINE][ICON_CAPITAL] (Quo Mod: 工人开始时 -1 次数. 在神圣权利公民完成后，可以建造国家奇迹大神庙, 这花费城市 -4 [ICON_FOOD] 食物每回合, 但是取消对工人的惩罚, 增加全局+50% [ICON_PRODUCTION] 生产对蹴球场, 当你完成娱乐中心时提供免费的工人.)' WHERE Tag='LOC_TRAIT_CIVILIZATION_LEGEND_FIVE_SUNS_DESCRIPTION' ;
+UPDATE LocalizedText SET Text= Text || '[NEWLINE][ICON_CAPITAL] (Quo Mod: 不能在现代之前建造骑兵。在神圣权利公民完成后，可以建造国家奇观大神庙，这将创建一个15格半径的区域，区域内的其他国家城市每回合减少6忠诚度，并且区域内的每个击杀都能获得[ICON_FAITH]信仰.)' WHERE Tag='LOC_TRAIT_CIVILIZATION_LEGEND_FIVE_SUNS_DESCRIPTION' ;
 
 
-UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: 作为墙提供防御，并允许市中心执行攻击，即使实际的墙壁不存在.)' WHERE Tag='LOC_BUILDING_TLACHTLI_DESCRIPTION' ;
+UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: 作为墙提供防御，并允许市中心执行攻击，即使城墙不存在.)' WHERE Tag='LOC_BUILDING_TLACHTLI_DESCRIPTION' ;
 
 
 
@@ -186,7 +189,7 @@ UPDATE LocalizedText SET Text= Text || '  [ICON_CAPITAL] (Quo Mod: 可以花费 
 
 
 -- Khmer
-UPDATE LocalizedText SET Text= Text || '[ICON_CAPITAL](Quo Mod: +100%[ICON_PRODUCTION]生产力对水渠. 当一个有宗教的城市完成水渠时，免费获得一个宗教僧伽和尚. 僧伽和尚接收+2[ICON_STRENGTH] 战斗中在每一个你控制的水渠。请注意此奖励不显示在战斗面板，但确实会增加.)' WHERE Tag='LOC_TRAIT_CIVILIZATION_KHMER_BARAYS_DESCRIPTION' ;
+UPDATE LocalizedText SET Text= Text || '[ICON_CAPITAL](Quo Mod: +100%[ICON_PRODUCTION]生产力对水渠. 当一个有宗教的城市完成水渠时，免费获得一个僧伽和尚. 僧伽和尚接收+2[ICON_STRENGTH] 战斗中在每一个你控制的水渠。请注意此奖励不显示在战斗面板，但确实会增加.)' WHERE Tag='LOC_TRAIT_CIVILIZATION_KHMER_BARAYS_DESCRIPTION' ;
 
 UPDATE LocalizedText SET Text= Text || '[ICON_CAPITAL](Quo Mod: 河流上的圣地提供邻接奖励。单位不会被河流减慢速度.)' WHERE Tag='LOC_TRAIT_LEADER_MONASTERIES_KING_DESCRIPTION' ;
 
@@ -210,12 +213,16 @@ UPDATE LocalizedText SET Text= '[ICON_CAPITAL](Quo Mod: 克里的城市总是忠
 UPDATE LocalizedText SET Text= '[ICON_CAPITAL](Quo Mod: 所有联盟类型都提供共享可见性. [ICON_TRADEROUTE] 向国外城市提供的贸易线路+1[ICON_FOOD]食物 +1[ICON_GOLD]金在目的城市每个营地和牧场.)' WHERE Tag='LOC_LEADER_POUNDMAKER_ABILITY_DESCRIPTION' ;
 
 -- Mapuche
-UPDATE LocalizedText SET Text= Text || '[ICON_CAPITAL](Quo Mod: 陆上作战单位有+ 1视野。所有单位无视控制区.)' WHERE Tag='LOC_TRAIT_LEADER_LAUTARO_ABILITY_DESCRIPTION_ALT' ;
+UPDATE LocalizedText SET Text= Text || '[ICON_CAPITAL](Quo Mod: 陆上作战单位有+1视野。所有单位无视控制区.)' WHERE Tag='LOC_TRAIT_LEADER_LAUTARO_ABILITY_DESCRIPTION_ALT' ;
+
+UPDATE LocalizedText SET Text= Text || '[ICON_CAPITAL](Quo Mod: 所有的战略资源一开始就可见.)' WHERE Tag='LOC_TRAIT_CIVILIZATION_MAPUCHE_TOQUI_DESCRIPTION' ;
+
+
 
 -- Georgia
-UPDATE LocalizedText SET Text= Text || '[ICON_CAPITAL](Quo Mod: +1[ICON_FAITH]信仰+1[ICON_PRODUCTION]生产力 在政府市政广场内3格的地块，包括竞争对手建造的市政广场.)' WHERE Tag='LOC_TRAIT_LEADER_RELIGION_CITY_STATES_DESCRIPTION' ;
+UPDATE LocalizedText SET Text= Text || '[ICON_CAPITAL](Quo Mod: +1[ICON_FAITH]信仰+1[ICON_PRODUCTION]生产力 在相邻市政广场的地块，这个奖励半径会随着市政广场的建筑增加而增加.)' WHERE Tag='LOC_TRAIT_LEADER_RELIGION_CITY_STATES_DESCRIPTION' ;
 
-UPDATE LocalizedText SET Text= Text || '[ICON_CAPITAL](Quo Mod: 建立没有前提，在城市里免费获得城墙.)' WHERE Tag='LOC_BUILDING_TSIKHE_DESCRIPTION' ;
+UPDATE LocalizedText SET Text= Text || '[ICON_CAPITAL](Quo Mod: 建立没有前提，在城市里免费获得古老城墙.)' WHERE Tag='LOC_BUILDING_TSIKHE_DESCRIPTION' ;
 
 -- Netherlands
 UPDATE LocalizedText SET Text= Text || '[ICON_CAPITAL](Quo Mod: 所有的地形被认为是有效的圩田地形，而不只是平原.)' WHERE Tag='LOC_IMPROVEMENT_POLDER_DESCRIPTION' ;
@@ -227,11 +234,12 @@ UPDATE LocalizedText SET Text= '[ICON_CAPITAL](Quo Mod: 欣喜若狂的城市收
 
 
 -- Mongolia
-UPDATE LocalizedText SET Text= Text || '[ICON_CAPITAL](Quo Mod: 任何和你处于战争中的主要文明，他所有的城市减少2忠诚度每回合.)' WHERE Tag='LOC_TRAIT_LEADER_GENGHIS_KHAN_ABILITY_DESCRIPTION' ;
+UPDATE LocalizedText SET Text= Text || '[ICON_CAPITAL](Quo Mod: 任何和你处于战争中的主要文明，他的所有城市每回合减少2忠诚度.)' WHERE Tag='LOC_TRAIT_LEADER_GENGHIS_KHAN_ABILITY_DESCRIPTION' ;
 
 -- Korea
-UPDATE LocalizedText SET Text= '[ICON_CAPITAL](Quo Mod: 收到 1 免费的主管. -10%[ICON_CULTURE]文化和 [ICON_SCIENCE]科学在没有主管的城市, 改变+10%[ICON_CULTURE] 文化和 [ICON_SCIENCE]科学在有主管的城市.)' WHERE Tag='LOC_TRAIT_LEADER_HWARANG_DESCRIPTION' ;
-UPDATE LocalizedText SET Text= '[ICON_CAPITAL](Quo Mod: 矿山收到 +1[ICON_FAITH] 信仰如果有一个相邻的学院. 农场收到 +1[ICON_FOOD]食物如果有一个相邻的学院.)' WHERE Tag='LOC_TRAIT_CIVILIZATION_THREE_KINGDOMS_DESCRIPTION' ;
+UPDATE LocalizedText SET Text= '[ICON_CAPITAL](Quo Mod: 收到 1 免费的主管. -10%[ICON_CULTURE]文化和 [ICON_SCIENCE]科学在没有主管的城市, 增加+10%[ICON_CULTURE] 文化和 [ICON_SCIENCE]科学在有主管的城市.)' WHERE Tag='LOC_TRAIT_LEADER_HWARANG_DESCRIPTION' ;
+
+UPDATE LocalizedText SET Text= '[ICON_CAPITAL](Quo Mod: 游戏开始时获得25[ICON_SCIENCE]科学, 基于游戏速度调整。矿山收到 +1[ICON_FAITH] 信仰如果有一个相邻的学院. 农场收到 +1[ICON_FOOD]食物如果有一个相邻的学院.)' WHERE Tag='LOC_TRAIT_CIVILIZATION_THREE_KINGDOMS_DESCRIPTION' ;
 
 
 

@@ -33,9 +33,9 @@ UPDATE LocalizedText SET Text=Text || '  [ICON_CAPITAL](Quo Mod: 该单位不需
 
 
 -- Siege
-UPDATE LocalizedText SET Text=Text || '  [ICON_CAPITAL](Quo Mod: 这个单位3范围，2移动，可以同一个回合移动和攻击.)' WHERE Tag='LOC_UNIT_CATAPULT_DESCRIPTION' AND (select Value from tblquooptions where optionId='QUO_OPTION_CAN_SIEGE_MOVE_AND_SHOOT') > 0;
-UPDATE LocalizedText SET Text=Text || '  [ICON_CAPITAL](Quo Mod: 这个单位3范围，2移动，可以同一个回合移动和攻击.)' WHERE Tag='LOC_UNIT_BOMBARD_DESCRIPTION' AND (select Value from tblquooptions where optionId='QUO_OPTION_CAN_SIEGE_MOVE_AND_SHOOT') > 0;
-UPDATE LocalizedText SET Text=Text || '  [ICON_CAPITAL](Quo Mod: 这个单位3范围，2移动，可以同一个回合移动和攻击.)' WHERE Tag='LOC_UNIT_ARTILLERY_DESCRIPTION' AND (select Value from tblquooptions where optionId='QUO_OPTION_CAN_SIEGE_MOVE_AND_SHOOT') > 0;
+UPDATE LocalizedText SET Text=Text || '  [ICON_CAPITAL](Quo Mod: 这个单位有3射程，2移动，可以同一个回合移动和攻击.)' WHERE Tag='LOC_UNIT_CATAPULT_DESCRIPTION' AND (select Value from tblquooptions where optionId='QUO_OPTION_CAN_SIEGE_MOVE_AND_SHOOT') > 0;
+UPDATE LocalizedText SET Text=Text || '  [ICON_CAPITAL](Quo Mod: 这个单位有3射程，2移动，可以同一个回合移动和攻击.)' WHERE Tag='LOC_UNIT_BOMBARD_DESCRIPTION' AND (select Value from tblquooptions where optionId='QUO_OPTION_CAN_SIEGE_MOVE_AND_SHOOT') > 0;
+UPDATE LocalizedText SET Text=Text || '  [ICON_CAPITAL](Quo Mod: 这个单位有3射程，2移动，可以同一个回合移动和攻击.)' WHERE Tag='LOC_UNIT_ARTILLERY_DESCRIPTION' AND (select Value from tblquooptions where optionId='QUO_OPTION_CAN_SIEGE_MOVE_AND_SHOOT') > 0;
 UPDATE LocalizedText SET Text=Text || '  [ICON_CAPITAL](Quo Mod: 可以同一个回合移动和攻击.)' WHERE Tag='LOC_UNIT_ROCKET_ARTILLERY_DESCRIPTION' AND (select Value from tblquooptions where optionId='QUO_OPTION_CAN_SIEGE_MOVE_AND_SHOOT') > 0;
 
 
@@ -194,7 +194,7 @@ UPDATE LocalizedText SET Text= Text || ' (Medieval)' WHERE Tag='LOC_BUILDING_HAL
 
 UPDATE LocalizedText SET Text='[ICON_CAPITAL](Quo Mod: +1[ICON_PRODUCTION] 生产力从渔船. +20%[ICON_PRODUCTION] 生产力对港口.)' WHERE Tag='LOC_BELIEF_GOD_OF_THE_SEA_DESCRIPTION' ;
 
-UPDATE LocalizedText SET Text='[ICON_CAPITAL](Quo Mod: +1[ICON_CULTURE] 文化在牧场. 侦察兵无视国界可以穿越.)' WHERE Tag='LOC_BELIEF_GOD_OF_THE_OPEN_SKY_DESCRIPTION' ;
+UPDATE LocalizedText SET Text='[ICON_CAPITAL](Quo Mod: +1[ICON_CULTURE] 文化在牧场. 攻城单位获得25%额外经验.)' WHERE Tag='LOC_BELIEF_GOD_OF_THE_OPEN_SKY_DESCRIPTION' ;
 
 UPDATE LocalizedText SET Text='[ICON_CAPITAL](Quo Mod: +1[ICON_CULTURE] 文化在种植园，当你建立城市时获得3格额外的地块.)' WHERE Tag='LOC_BELIEF_ORAL_TRADITION_DESCRIPTION' ;
 
@@ -204,11 +204,11 @@ UPDATE LocalizedText SET Text='[ICON_CAPITAL](Quo Mod: +2[ICON_PRODUCTION] 在�
 
 UPDATE LocalizedText SET Text='[ICON_CAPITAL](Quo Mod: +1[ICON_FOOD] 食物从营地和+25%经验获得对远程单位.)' WHERE Tag='LOC_BELIEF_GODDESS_OF_THE_HUNT_DESCRIPTION' ;
 
-UPDATE LocalizedText SET Text='[ICON_CAPITAL](Quo Mod: +2[ICON_Faith] 信仰从采石场. +200%[ICON_PRODUCTION] 生产力对巨石阵.)' WHERE Tag='LOC_BELIEF_STONE_CIRCLES_DESCRIPTION' ;
+UPDATE LocalizedText SET Text='[ICON_CAPITAL](Quo Mod: +2[ICON_Faith] 信仰从采石场. 在所有城市获得免费的古城墙基而不需要军营.)' WHERE Tag='LOC_BELIEF_STONE_CIRCLES_DESCRIPTION' ;
 
 UPDATE LocalizedText SET Text='[ICON_CAPITAL](Quo Mod: 边境扩展速度增加 150%. +1[ICON_TRADEROUTE] 商路在首都.)' WHERE Tag='LOC_BELIEF_RELIGIOUS_SETTLEMENTS_DESCRIPTION' ;
 
-UPDATE LocalizedText SET Text='[ICON_CAPITAL](Quo Mod: +30% [ICON_PRODUCTION] 生产力对古代和古典奇观.)' WHERE Tag='LOC_BELIEF_MONUMENT_TO_THE_GODS_DESCRIPTION' ;
+UPDATE LocalizedText SET Text='[ICON_CAPITAL](Quo Mod: +15% [ICON_PRODUCTION] 生产力对古代和古典奇观，立刻获得一个免费的遗物.)' WHERE Tag='LOC_BELIEF_MONUMENT_TO_THE_GODS_DESCRIPTION' ;
 
 UPDATE LocalizedText SET Text='[ICON_CAPITAL](Quo Mod: +1[ICON_AMENITIES] 宜居度在河流上的圣地。河流上圣地获得邻接奖励.)' WHERE Tag='LOC_BELIEF_RIVER_GODDESS_DESCRIPTION' ;
 
@@ -219,6 +219,13 @@ UPDATE LocalizedText SET Text='[ICON_CAPITAL](Quo Mod: 所有城市的城市增�
 UPDATE LocalizedText SET Text='[ICON_CAPITAL](Quo Mod: +1[ICON_PRODUCTION] 生产力对绿洲、泛滥平原、沼泽、大米和小麦.)' WHERE Tag='LOC_BELIEF_LADY_OF_THE_REEDS_AND_MARSHES_DESCRIPTION' ;
 
 UPDATE LocalizedText SET Text='[ICON_CAPITAL](Quo Mod: +1[ICON_FAITH] 信仰在具有惊人魅力的地块.)' WHERE Tag='LOC_BELIEF_EARTH_GODDESS_DESCRIPTION' ;
+
+UPDATE LocalizedText SET Text='[ICON_CAPITAL](Quo Mod: 圣地提供 +1[ICON_FAITH] 信仰从森林和雨林.)' WHERE Tag='LOC_BELIEF_SACRED_PATH_DESCRIPTION' ;
+
+
+-- religion
+--UPDATE LocalizedText SET Text= Text || '[ICON_CAPITAL](Quo Mod: +2[ICON_FAITH] Faith from Lake tiles.)' WHERE Tag='LOC_BELIEF_RELIGIOUS_COMMUNITY_DESCRIPTION' ;
+
 
 
 -- Governments
@@ -241,6 +248,9 @@ UPDATE LocalizedText SET Text='+2[ICON_PRODUCTION], +1[ICON_HOUSING] per distric
  
 -- Governors
 UPDATE LocalizedText SET Text= Text || '[ICON_CAPITAL](Quo Mod: 这个总督施加双倍的忠诚压力.)' WHERE Tag='LOC_GOVERNOR_PROMOTION_REDOUBT_DESCRIPTION' ;
+
+UPDATE LocalizedText SET Text= '[ICON_CAPITAL](Quo Mod: 从这个城市收获和清除获得的产量+30%.)' WHERE Tag='LOC_GOVERNOR_PROMOTION_RESOURCE_MANAGER_GROUNDBREAKER_DESCRIPTION' ;
+ 
  
  
 
