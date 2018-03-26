@@ -8,7 +8,7 @@ UPDATE LocalizedText SET Text='侦察单位2倍经验. 侦察单位和移民无�
 
 
 -- URBAN PLANNING
-UPDATE LocalizedText SET Text=Text || ' +100% [ICON_PRODUCTION] 生产力 在 粮仓.' WHERE Tag='LOC_POLICY_URBAN_PLANNING_DESCRIPTION' ;
+UPDATE LocalizedText SET Text=Text || ' +100% [ICON_PRODUCTION] 生产力对粮仓.' WHERE Tag='LOC_POLICY_URBAN_PLANNING_DESCRIPTION' ;
 
 
 -- INSULAE (Housing 1), MEDINA QUARTER (Housing 2)
@@ -16,8 +16,8 @@ UPDATE LocalizedText SET Text=' +1 [ICON_HOUSING] 在所有城市.' WHERE Tag='L
 UPDATE LocalizedText SET Text=' +2 [ICON_HOUSING] 在所有城市.' WHERE Tag='LOC_POLICY_MEDINA_QUARTER_DESCRIPTION' ;
 
 
-UPDATE LocalizedText SET Text='[ICON_HOUSING] 住房 1 (Insulae)' WHERE Tag='LOC_POLICY_INSULAE_NAME' ;
-UPDATE LocalizedText SET Text='[ICON_HOUSING] 住房 2 (Medina Quarter)' WHERE Tag='LOC_POLICY_MEDINA_QUARTER_NAME' ;
+UPDATE LocalizedText SET Text='[ICON_HOUSING] 住房 1 (新楼房)' WHERE Tag='LOC_POLICY_INSULAE_NAME' ;
+UPDATE LocalizedText SET Text='[ICON_HOUSING] 住房 2 (古老城区)' WHERE Tag='LOC_POLICY_MEDINA_QUARTER_NAME' ;
 
 
 -- NEW DEAL
@@ -30,9 +30,9 @@ UPDATE LocalizedText SET Text='+30% [ICON_Production] 生产力对中世纪时�
 UPDATE LocalizedText SET Text='+30% [ICON_Production] 生产力对所有的奇迹.' WHERE Tag='LOC_POLICY_SKYSCRAPERS_DESCRIPTION' ;
 
 
-UPDATE LocalizedText SET Text='[ICON_Production][ICON_TOURISM] 奇迹 1 (Corvee)' WHERE Tag='LOC_POLICY_CORVEE_NAME' ;
-UPDATE LocalizedText SET Text='[ICON_Production][ICON_TOURISM] 奇迹 2 (Gothic Architecture)' WHERE Tag='LOC_POLICY_GOTHIC_ARCHITECTURE_NAME' ;
-UPDATE LocalizedText SET Text='[ICON_Production][ICON_TOURISM] 奇迹 3 (Skyscrapers)' WHERE Tag='LOC_POLICY_SKYSCRAPERS_NAME' ;
+UPDATE LocalizedText SET Text='[ICON_Production][ICON_TOURISM] 奇迹 1 (强迫劳役)' WHERE Tag='LOC_POLICY_CORVEE_NAME' ;
+UPDATE LocalizedText SET Text='[ICON_Production][ICON_TOURISM] 奇迹 2 (哥特式建筑)' WHERE Tag='LOC_POLICY_GOTHIC_ARCHITECTURE_NAME' ;
+UPDATE LocalizedText SET Text='[ICON_Production][ICON_TOURISM] 奇迹 3 (摩天大楼)' WHERE Tag='LOC_POLICY_SKYSCRAPERS_NAME' ;
 
 
 -- VETERANCY
@@ -40,7 +40,7 @@ UPDATE LocalizedText SET Text='+100% [ICON_PRODUCTION] 生产力对军营区和�
 
 
 -- EARLY EMPIRE
-UPDATE LocalizedText SET Text='+2[ICON_CULTURE] 文化对没有纪念碑的城市, +100%[ICON_PRODUCTION] 生产力在纪念碑.' WHERE Tag='LOC_POLICY_COLONIZATION_DESCRIPTION' ;
+UPDATE LocalizedText SET Text='+2[ICON_CULTURE] 文化对没有纪念碑的城市, +100%[ICON_PRODUCTION] 生产力对纪念碑.' WHERE Tag='LOC_POLICY_COLONIZATION_DESCRIPTION' ;
 
 
 
@@ -58,28 +58,28 @@ UPDATE LocalizedText SET Text='+30% 城市增长速度对不在你首都 [ICON_C
 -- TIERED POLICIES
 
 
-UPDATE LocalizedText SET Text='[ICON_Production][ICON_RESOURCE_IRON] 士兵 1 (Agoge)' WHERE Tag='LOC_POLICY_AGOGE_NAME' ;
-UPDATE LocalizedText SET Text='[ICON_Production][ICON_RESOURCE_IRON] 士兵 2 (Feudal Contract)' WHERE Tag='LOC_POLICY_FEUDAL_CONTRACT_NAME' ;
-UPDATE LocalizedText SET Text='[ICON_Production][ICON_RESOURCE_IRON] 士兵 3 (Grand Armee)' WHERE Tag='LOC_POLICY_GRANDE_ARMEE_NAME' ;
-UPDATE LocalizedText SET Text='[ICON_Production][ICON_RESOURCE_IRON] 士兵 4 (Military First)' WHERE Tag='LOC_POLICY_MILITARY_FIRST_NAME' ;
+UPDATE LocalizedText SET Text='[ICON_Production][ICON_RESOURCE_IRON] 士兵 1 (斯巴达教育)' WHERE Tag='LOC_POLICY_AGOGE_NAME' ;
+UPDATE LocalizedText SET Text='[ICON_Production][ICON_RESOURCE_IRON] 士兵 2 (封建契约)' WHERE Tag='LOC_POLICY_FEUDAL_CONTRACT_NAME' ;
+UPDATE LocalizedText SET Text='[ICON_Production][ICON_RESOURCE_IRON] 士兵 3 (大军团)' WHERE Tag='LOC_POLICY_GRANDE_ARMEE_NAME' ;
+UPDATE LocalizedText SET Text='[ICON_Production][ICON_RESOURCE_IRON] 士兵 4 (先军政策)' WHERE Tag='LOC_POLICY_MILITARY_FIRST_NAME' ;
 
 
 
-UPDATE LocalizedText SET Text='[ICON_Production][ICON_RESOURCE_HORSES] 骑手 1 (Manuever)' WHERE Tag='LOC_POLICY_MANEUVER_NAME' ;
-UPDATE LocalizedText SET Text='[ICON_Production][ICON_RESOURCE_HORSES] 骑手 2 (Chivalry)' WHERE Tag='LOC_POLICY_CHIVALRY_NAME' ;
-UPDATE LocalizedText SET Text='[ICON_Production][ICON_RESOURCE_HORSES] 骑手 3 (Lightning Warfare)' WHERE Tag='LOC_POLICY_LIGHTNING_WARFARE_NAME' ;
+UPDATE LocalizedText SET Text='[ICON_Production][ICON_RESOURCE_HORSES] 骑手 1 (演习)' WHERE Tag='LOC_POLICY_MANEUVER_NAME' ;
+UPDATE LocalizedText SET Text='[ICON_Production][ICON_RESOURCE_HORSES] 骑手 2 (骑士精神)' WHERE Tag='LOC_POLICY_CHIVALRY_NAME' ;
+UPDATE LocalizedText SET Text='[ICON_Production][ICON_RESOURCE_HORSES] 骑手 3 (闪电战)' WHERE Tag='LOC_POLICY_LIGHTNING_WARFARE_NAME' ;
 
 
-UPDATE LocalizedText SET Text='[ICON_Production][ICON_RANGED] 空中单位 1 (Finest Hour)' WHERE Tag='LOC_POLICY_FINEST_HOUR_NAME' ;
-UPDATE LocalizedText SET Text='[ICON_Production][ICON_RANGED] 空中单位 2 (Strategic Air Force)' WHERE Tag='LOC_POLICY_STRATEGIC_AIR_FORCE_NAME' ;
+UPDATE LocalizedText SET Text='[ICON_Production][ICON_RANGED] 空中单位 1 (光荣时刻)' WHERE Tag='LOC_POLICY_FINEST_HOUR_NAME' ;
+UPDATE LocalizedText SET Text='[ICON_Production][ICON_RANGED] 空中单位 2 (战略空军)' WHERE Tag='LOC_POLICY_STRATEGIC_AIR_FORCE_NAME' ;
 
 
-UPDATE LocalizedText SET Text='[ICON_Production][ICON_RESOURCE_WHALES] 海军 1 (Martitime Industries)' WHERE Tag='LOC_POLICY_MARITIME_INDUSTRIES_NAME' ;
-UPDATE LocalizedText SET Text='[ICON_Production][ICON_RESOURCE_WHALES] 海军 2 (Press Gangs)' WHERE Tag='LOC_POLICY_PRESS_GANGS_NAME' ;
-UPDATE LocalizedText SET Text='[ICON_Production][ICON_RESOURCE_WHALES] 海军 3 (International Waters)' WHERE Tag='LOC_POLICY_INTERNATIONAL_WATERS_NAME' ;
+UPDATE LocalizedText SET Text='[ICON_Production][ICON_RESOURCE_WHALES] 海军 1 (海运业)' WHERE Tag='LOC_POLICY_MARITIME_INDUSTRIES_NAME' ;
+UPDATE LocalizedText SET Text='[ICON_Production][ICON_RESOURCE_WHALES] 海军 2 (强征入伍)' WHERE Tag='LOC_POLICY_PRESS_GANGS_NAME' ;
+UPDATE LocalizedText SET Text='[ICON_Production][ICON_RESOURCE_WHALES] 海军 3 (国际水域)' WHERE Tag='LOC_POLICY_INTERNATIONAL_WATERS_NAME' ;
 
 
-UPDATE LocalizedText SET Text='[ICON_Production][ICON_RESOURCE_WINE] Ilkum' WHERE Tag='LOC_POLICY_ILKUM_NAME' ;
+UPDATE LocalizedText SET Text='[ICON_Production][ICON_RESOURCE_WINE] 服役' WHERE Tag='LOC_POLICY_ILKUM_NAME' ;
 UPDATE LocalizedText SET Text='[ICON_RESOURCE_WINE][ICON_RESOURCE_WINE] 农奴制' WHERE Tag='LOC_POLICY_SERFDOM_NAME' ;
 UPDATE LocalizedText SET Text='[ICON_Production][ICON_RESOURCE_WINE][ICON_RESOURCE_WINE] 公共工程' WHERE Tag='LOC_POLICY_PUBLIC_WORKS_NAME' ;
 

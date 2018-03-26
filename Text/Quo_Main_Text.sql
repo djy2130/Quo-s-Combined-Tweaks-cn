@@ -294,6 +294,18 @@ SET txt = txt ||
 			WHERE tblQuoOptions.OptionClass ='XAV'
 			) );
 			
+UPDATE quo_T SET txt = txt || '[NEWLINE][NEWLINE]Hell Mode Settings:' ;
+
+UPDATE quo_T
+SET txt = txt || 
+	(SELECT group_concat(rez,' ')
+		FROM
+			(SELECT '[NEWLINE][ICON_BOLT]' || substr(tblQuoOptions.OptionID,12) || ': ' ||tblQuoOptions.Value
+			AS rez 
+			FROM tblQuoOptions
+			WHERE tblQuoOptions.OptionClass ='HELL'
+			) );	
+			
 
 INSERT INTO LocalizedText
 		(Tag, Text, Language)

@@ -151,42 +151,42 @@ UPDATE LocalizedText SET Text=Text || '  [ICON_CAPITAL](Quo Mod: 这个奇迹不
 
  */
 -- wonder era names
-UPDATE LocalizedText SET Text= Text || ' (Ancient)' WHERE Tag='LOC_BUILDING_HANGING_GARDENS_NAME' ;
-UPDATE LocalizedText SET Text= Text || ' (Ancient)' WHERE Tag='LOC_BUILDING_ORACLE_NAME' ;
-UPDATE LocalizedText SET Text= Text || ' (Ancient)' WHERE Tag='LOC_BUILDING_PYRAMIDS_NAME' ;
-UPDATE LocalizedText SET Text= Text || ' (Ancient)' WHERE Tag='LOC_BUILDING_STONEHENGE_NAME' ;
-UPDATE LocalizedText SET Text= Text || ' (Atomic)' WHERE Tag='LOC_BUILDING_ESTADIO_DO_MARACANA_NAME' ;
-UPDATE LocalizedText SET Text= Text || ' (Atomic)' WHERE Tag='LOC_BUILDING_SYDNEY_OPERA_HOUSE_NAME' ;
-UPDATE LocalizedText SET Text= Text || ' (Classical)' WHERE Tag='LOC_BUILDING_COLOSSEUM_NAME' ;
-UPDATE LocalizedText SET Text= Text || ' (Classical)' WHERE Tag='LOC_BUILDING_COLOSSUS_NAME' ;
-UPDATE LocalizedText SET Text= Text || ' (Classical)' WHERE Tag='LOC_BUILDING_GREAT_LIBRARY_NAME' ;
-UPDATE LocalizedText SET Text= Text || ' (Classical)' WHERE Tag='LOC_BUILDING_GREAT_LIGHTHOUSE_NAME' ;
-UPDATE LocalizedText SET Text= Text || ' (Classical)' WHERE Tag='LOC_BUILDING_MAHABODHI_TEMPLE_NAME' ;
-UPDATE LocalizedText SET Text= Text || ' (Classical)' WHERE Tag='LOC_BUILDING_PETRA_NAME' ;
-UPDATE LocalizedText SET Text= Text || ' (Classical)' WHERE Tag='LOC_BUILDING_TERRACOTTA_ARMY_NAME' ;
-UPDATE LocalizedText SET Text= Text || ' (Industrial)' WHERE Tag='LOC_BUILDING_BIG_BEN_NAME' ;
-UPDATE LocalizedText SET Text= Text || ' (Industrial)' WHERE Tag='LOC_BUILDING_BOLSHOI_THEATRE_NAME' ;
-UPDATE LocalizedText SET Text= Text || ' (Industrial)' WHERE Tag='LOC_BUILDING_HERMITAGE_NAME' ;
-UPDATE LocalizedText SET Text= Text || ' (Industrial)' WHERE Tag='LOC_BUILDING_OXFORD_UNIVERSITY_NAME' ;
-UPDATE LocalizedText SET Text= Text || ' (Industrial)' WHERE Tag='LOC_BUILDING_RUHR_VALLEY_NAME' ;
-UPDATE LocalizedText SET Text= Text || ' (Medieval)' WHERE Tag='LOC_BUILDING_ALHAMBRA_NAME' ;
-UPDATE LocalizedText SET Text= Text || ' (Medieval)' WHERE Tag='LOC_BUILDING_CHICHEN_ITZA_NAME' ;
-UPDATE LocalizedText SET Text= Text || ' (Medieval)' WHERE Tag='LOC_BUILDING_HAGIA_SOPHIA_NAME' ;
-UPDATE LocalizedText SET Text= Text || ' (Medieval)' WHERE Tag='LOC_BUILDING_HUEY_TEOCALLI_NAME' ;
-UPDATE LocalizedText SET Text= Text || ' (Medieval)' WHERE Tag='LOC_BUILDING_MONT_ST_MICHEL_NAME' ;
-UPDATE LocalizedText SET Text= Text || ' (Modern)' WHERE Tag='LOC_BUILDING_BROADWAY_NAME' ;
-UPDATE LocalizedText SET Text= Text || ' (Modern)' WHERE Tag='LOC_BUILDING_CRISTO_REDENTOR_NAME' ;
-UPDATE LocalizedText SET Text= Text || ' (Modern)' WHERE Tag='LOC_BUILDING_EIFFEL_TOWER_NAME' ;
-UPDATE LocalizedText SET Text= Text || ' (Renaissance)' WHERE Tag='LOC_BUILDING_FORBIDDEN_CITY_NAME' ;
-UPDATE LocalizedText SET Text= Text || ' (Renaissance)' WHERE Tag='LOC_BUILDING_GREAT_ZIMBABWE_NAME' ;
-UPDATE LocalizedText SET Text= Text || ' (Renaissance)' WHERE Tag='LOC_BUILDING_POTALA_PALACE_NAME' ;
-UPDATE LocalizedText SET Text= Text || ' (Renaissance)' WHERE Tag='LOC_BUILDING_VENETIAN_ARSENAL_NAME' ;
+UPDATE LocalizedText SET Text= Text || ' (远古时代)' WHERE Tag='LOC_BUILDING_HANGING_GARDENS_NAME' ;
+UPDATE LocalizedText SET Text= Text || ' (远古时代)' WHERE Tag='LOC_BUILDING_ORACLE_NAME' ;
+UPDATE LocalizedText SET Text= Text || ' (远古时代)' WHERE Tag='LOC_BUILDING_PYRAMIDS_NAME' ;
+UPDATE LocalizedText SET Text= Text || ' (远古时代)' WHERE Tag='LOC_BUILDING_STONEHENGE_NAME' ;
+UPDATE LocalizedText SET Text= Text || ' (原子时代)' WHERE Tag='LOC_BUILDING_ESTADIO_DO_MARACANA_NAME' ;
+UPDATE LocalizedText SET Text= Text || ' (原子时代)' WHERE Tag='LOC_BUILDING_SYDNEY_OPERA_HOUSE_NAME' ;
+UPDATE LocalizedText SET Text= Text || ' (古典时代)' WHERE Tag='LOC_BUILDING_COLOSSEUM_NAME' ;
+UPDATE LocalizedText SET Text= Text || ' (古典时代)' WHERE Tag='LOC_BUILDING_COLOSSUS_NAME' ;
+UPDATE LocalizedText SET Text= Text || ' (古典时代)' WHERE Tag='LOC_BUILDING_GREAT_LIBRARY_NAME' ;
+UPDATE LocalizedText SET Text= Text || ' (古典时代)' WHERE Tag='LOC_BUILDING_GREAT_LIGHTHOUSE_NAME' ;
+UPDATE LocalizedText SET Text= Text || ' (古典时代)' WHERE Tag='LOC_BUILDING_MAHABODHI_TEMPLE_NAME' ;
+UPDATE LocalizedText SET Text= Text || ' (古典时代)' WHERE Tag='LOC_BUILDING_PETRA_NAME' ;
+UPDATE LocalizedText SET Text= Text || ' (古典时代)' WHERE Tag='LOC_BUILDING_TERRACOTTA_ARMY_NAME' ;
+UPDATE LocalizedText SET Text= Text || ' (工业时代)' WHERE Tag='LOC_BUILDING_BIG_BEN_NAME' ;
+UPDATE LocalizedText SET Text= Text || ' (工业时代)' WHERE Tag='LOC_BUILDING_BOLSHOI_THEATRE_NAME' ;
+UPDATE LocalizedText SET Text= Text || ' (工业时代)' WHERE Tag='LOC_BUILDING_HERMITAGE_NAME' ;
+UPDATE LocalizedText SET Text= Text || ' (工业时代)' WHERE Tag='LOC_BUILDING_OXFORD_UNIVERSITY_NAME' ;
+UPDATE LocalizedText SET Text= Text || ' (工业时代)' WHERE Tag='LOC_BUILDING_RUHR_VALLEY_NAME' ;
+UPDATE LocalizedText SET Text= Text || ' (中世纪)' WHERE Tag='LOC_BUILDING_ALHAMBRA_NAME' ;
+UPDATE LocalizedText SET Text= Text || ' (中世纪)' WHERE Tag='LOC_BUILDING_CHICHEN_ITZA_NAME' ;
+UPDATE LocalizedText SET Text= Text || ' (中世纪)' WHERE Tag='LOC_BUILDING_HAGIA_SOPHIA_NAME' ;
+UPDATE LocalizedText SET Text= Text || ' (中世纪)' WHERE Tag='LOC_BUILDING_HUEY_TEOCALLI_NAME' ;
+UPDATE LocalizedText SET Text= Text || ' (中世纪)' WHERE Tag='LOC_BUILDING_MONT_ST_MICHEL_NAME' ;
+UPDATE LocalizedText SET Text= Text || ' (现代)' WHERE Tag='LOC_BUILDING_BROADWAY_NAME' ;
+UPDATE LocalizedText SET Text= Text || ' (现代)' WHERE Tag='LOC_BUILDING_CRISTO_REDENTOR_NAME' ;
+UPDATE LocalizedText SET Text= Text || ' (现代)' WHERE Tag='LOC_BUILDING_EIFFEL_TOWER_NAME' ;
+UPDATE LocalizedText SET Text= Text || ' (文艺复兴)' WHERE Tag='LOC_BUILDING_FORBIDDEN_CITY_NAME' ;
+UPDATE LocalizedText SET Text= Text || ' (文艺复兴)' WHERE Tag='LOC_BUILDING_GREAT_ZIMBABWE_NAME' ;
+UPDATE LocalizedText SET Text= Text || ' (文艺复兴)' WHERE Tag='LOC_BUILDING_POTALA_PALACE_NAME' ;
+UPDATE LocalizedText SET Text= Text || ' (文艺复兴)' WHERE Tag='LOC_BUILDING_VENETIAN_ARSENAL_NAME' ;
 
 -- dlc
 
-UPDATE LocalizedText SET Text= Text || ' (Ancient)' WHERE Tag='LOC_BUILDING_BASILIKOI_PAIDES_DESCRIPTION' ;
-UPDATE LocalizedText SET Text= Text || ' (Classical)' WHERE Tag='LOC_BUILDING_APADANA_DESCRIPTION' ;
-UPDATE LocalizedText SET Text= Text || ' (Medieval)' WHERE Tag='LOC_BUILDING_HALICARNASSUS_MAUSOLEUM_DESCRIPTION' ;
+UPDATE LocalizedText SET Text= Text || ' (远古时代)' WHERE Tag='LOC_BUILDING_BASILIKOI_PAIDES_DESCRIPTION' ;
+UPDATE LocalizedText SET Text= Text || ' (古典时代)' WHERE Tag='LOC_BUILDING_APADANA_DESCRIPTION' ;
+UPDATE LocalizedText SET Text= Text || ' (中世纪)' WHERE Tag='LOC_BUILDING_HALICARNASSUS_MAUSOLEUM_DESCRIPTION' ;
 
 
 
@@ -249,7 +249,7 @@ UPDATE LocalizedText SET Text='+2[ICON_PRODUCTION], +1[ICON_HOUSING] per distric
 -- Governors
 UPDATE LocalizedText SET Text= Text || '[ICON_CAPITAL](Quo Mod: 这个总督施加双倍的忠诚压力.)' WHERE Tag='LOC_GOVERNOR_PROMOTION_REDOUBT_DESCRIPTION' ;
 
-UPDATE LocalizedText SET Text= '[ICON_CAPITAL](Quo Mod: 从这个城市收获和清除获得的产量+30%.)' WHERE Tag='LOC_GOVERNOR_PROMOTION_RESOURCE_MANAGER_GROUNDBREAKER_DESCRIPTION' ;
+UPDATE LocalizedText SET Text= '[ICON_CAPITAL](Quo Mod: 从这个城市收获和清除资源获得的产量+30%.)' WHERE Tag='LOC_GOVERNOR_PROMOTION_RESOURCE_MANAGER_GROUNDBREAKER_DESCRIPTION' ;
  
  
  
@@ -294,6 +294,18 @@ SET txt = txt ||
 			FROM tblQuoOptions
 			WHERE tblQuoOptions.OptionClass ='XAV'
 			) );
+			
+UPDATE quo_T SET txt = txt || '[NEWLINE][NEWLINE]Hell Mode Settings:' ;
+
+UPDATE quo_T
+SET txt = txt || 
+	(SELECT group_concat(rez,' ')
+		FROM
+			(SELECT '[NEWLINE][ICON_BOLT]' || substr(tblQuoOptions.OptionID,12) || ': ' ||tblQuoOptions.Value
+			AS rez 
+			FROM tblQuoOptions
+			WHERE tblQuoOptions.OptionClass ='HELL'
+			) );	
 			
 
 INSERT INTO LocalizedText
